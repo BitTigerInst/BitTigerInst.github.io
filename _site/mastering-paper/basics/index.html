@@ -1,0 +1,3258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+      <title>Mastering Paper by FiftyThree: Back to the Basics × Made Mistakes</title>
+    
+
+    
+      <meta name="description" content="A refresher tutorial on Paper by FiftyThree drawing and painting techniques along with a few color theory principles for good measure." />
+    
+
+    <!-- Sharing Meta -->
+
+  <meta name="twitter:title" property="og:title" content="Mastering Paper by FiftyThree: Back to the Basics">
+
+<meta name="twitter:url" property="og:url" content="http://localhost:4000/mastering-paper/basics/">
+
+  <meta name="twitter:description" property="og:description" content="A refresher tutorial on Paper by FiftyThree drawing and painting techniques along with a few color theory principles for good measure.">
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:creator" content="@mmistakes">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" property="og:image" content="http://localhost:4000/images/paper-53-basics-feature.jpg">
+
+<meta property="og:locale" content="en_US">
+
+  <meta property="og:type" content="article">
+
+<meta property="og:site_name" content="Made Mistakes">
+
+  <meta property="og:image" content="http://localhost:4000/images/paper-53-basics-teaser.jpg">
+
+
+
+    <link rel="canonical" href="http://localhost:4000/mastering-paper/basics/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="http://localhost:4000/sitemap.xml">
+
+    <link href="http://feeds.feedburner.com/MadeMistakes" type="application/atom+xml" rel="alternate" title="Made Mistakes &#8211; Everything">
+    <link href="http://feeds.feedburner.com/MadeMistakesArticles" type="application/atom+xml" rel="alternate" title="Made Mistakes &#8211; Articles">
+    <link href="http://feeds.feedburner.com/MadeMistakesMasteringPaper" type="application/atom+xml" rel="alternate" title="Made Mistakes &#8211; Mastering Paper">
+    <link href="http://feeds.feedburner.com/MadeMistakesPaperFaces" type="application/atom+xml" rel="alternate" title="Made Mistakes &#8211; PaperFaces Portraits">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Webmaster Tools verifications -->
+    <meta name="google-site-verification" content="">
+    <meta name="msvalidate.01" content="">
+    <meta name="alexaVerifyID" content="">
+    <meta name="yandex-verification" content="">
+
+    <link rel="author" href="https://plus.google.com/+MichaelRoseDesign/posts?rel=author">
+
+    
+      <style>/* ==========================================================================
+   CRITICAL CSS
+   ========================================================================== */
+/* ==========================================================================
+   SCSS VARIABLES
+   ========================================================================== */
+/*
+   Typography related variables
+   ========================================================================== */
+/*
+   Color variables
+   ========================================================================== */
+/*
+   Masthead
+   ========================================================================== */
+/*
+   Form variables
+   ========================================================================== */
+/*
+   Code snippet variables
+   ========================================================================== */
+/*
+   Screen sizes
+   ========================================================================== */
+/*
+   Visual sitemap
+   ========================================================================== */
+/*
+   Animation
+   ========================================================================== */
+/*
+   Vendor
+   ========================================================================== */
+/* ==========================================================================
+   MIXINS
+   ========================================================================== */
+a:focus {
+  /* default */
+  outline: thin dotted #f3bc15;
+  /* Webkit */
+  outline: 5px auto #f3bc15;
+  outline-offset: -2px; }
+
+/*
+   em Function
+   ========================================================================== */
+/*
+   Bourbon Clearfix
+   ========================================================================== */
+/*
+   Typography Related Mixins
+   ========================================================================== */
+/* Vertical rhythm
+   https://github.com/sturobson/Sassifaction */
+/**
+ * In this mixin you can specify the font size in PX and
+ * it will calculate the REM based on your $doc-font-size
+ * & $doc-line-height variables.
+ *
+ *  @include font-size(24);
+ *
+ * It will also create a bottom margin based on the
+ * $doc-font-size & $doc-line-height variables unless you
+ * specify that it shouldn't have one.
+ *
+ *  @include font-size(24, no);
+ *
+ * Or if you want to specify a different bottom margin to
+ * be generated.
+ *
+ *  @include font-size(24, 32);
+ *
+ * This mixin also generates a pixel-less line height by
+ * default unless you specify that you either don't want
+ * one where I'd suggest declaring 1 within the mixin.
+ *
+ *  @include font-size(24, yes, 1);
+ *
+ * There's also the option to specify a different line-height
+ * for it to generate to, where you would specify the
+ * line-height in (effectively) it's pixel value.
+ *
+ *  @include font-size(24, yes, 40);
+ */
+/* ==========================================================================
+   STYLE RESETS
+   ========================================================================== */
+html {
+  /* apply a natural box layout model to all elements */
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  font-size: 15px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px; } }
+  @media (min-width: 1024px) {
+    html {
+      font-size: 18px; } }
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* remove margin */
+body {
+  margin: 0; }
+
+/* selected elements */
+::-moz-selection {
+  color: #fff;
+  background: #000; }
+::selection {
+  color: #fff;
+  background: #000; }
+
+/* display HTML5 elements in IE6-9 and FF3 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block; }
+
+/* display block in IE6-9 and FF3 */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* prevents modern browsers from displaying 'audio' without controls */
+audio:not([controls]) {
+  display: none; }
+
+/* remove blue color */
+a {
+  color: inherit; }
+
+/* apply focus state */
+/* remove outline from links */
+a:hover,
+a:active {
+  outline: 0; }
+
+/* prevent sub and sup affecting line-height in all browsers */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* img border in anchor's and image quality */
+img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+/* prevent max-width from affecting Google Maps */
+#map_canvas img,
+.google-maps img {
+  max-width: none; }
+
+/* consistent form font size in all browsers, margin changes, misc */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle; }
+
+button,
+input {
+  *overflow: visible;
+  line-height: normal; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer; }
+
+input[type="search"] {
+  box-sizing: content-box;
+  -webkit-appearance: textfield; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* ==========================================================================
+   BASE ELEMENTS
+   ========================================================================== */
+/*
+   Breakpoint-Sass
+   ========================================================================== */
+/*
+   Typography
+   ========================================================================== */
+/* Modular scale
+ *  one    - 2.441
+ *  two    - 1.953
+ *  three  - 1.563
+ *  four   - 1.25
+ *  five   - 1
+ *  six    - 0.8
+ *  seven  - 0.64
+ *  eight  - 0.512
+ */
+body {
+  margin: 0;
+  padding: 0;
+  color: #4c4c4c;
+  font-family: "PT Serif", serif;
+  line-height: 1.5; }
+  body.overflow--hidden {
+    /* when primary navigation is visible, the content in the background won't scroll */
+    overflow: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25; }
+
+small {
+  font-size: 0.8rem; }
+
+u,
+ins {
+  text-decoration: none;
+  border-bottom: 1px solid #4c4c4c; }
+  u a,
+  ins a {
+    color: inherit; }
+
+del a {
+  color: inherit; }
+
+/* reduce orphans and widows when printing */
+p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
+  orphans: 3;
+  widows: 3; }
+
+/* Abbreviations */
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: none;
+  cursor: help;
+  border-bottom: 1px dotted #4c4c4c; }
+
+/* Blockquotes */
+blockquote {
+  margin: 2em 1em 2em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-style: italic;
+  border-left: 0.25em solid #f3bc15; }
+  blockquote a {
+    color: inherit; }
+  blockquote cite {
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 0.8rem;
+    font-style: normal; }
+    blockquote cite:before {
+      content: "\2014";
+      padding-right: 5px; }
+
+/* Links */
+a {
+  text-decoration: none; }
+  a:hover, a:active {
+    outline: 0; }
+
+/* Lists */
+@media (min-width: 37.5em) {
+  ol, ul {
+    padding-left: 0; }
+    ol ol, ol ul, ul ol, ul ul {
+      padding: 0.5em 1em; } }
+
+/* Code */
+tt, code, kbd, samp, pre {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 0.8rem; }
+
+pre {
+  overflow-x: auto; }
+
+p code,
+li code,
+figcaption code {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  background: #eeeeee;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px; }
+  p code:before, p code:after,
+  li code:before,
+  li code:after,
+  figcaption code:before,
+  figcaption code:after {
+    letter-spacing: -0.2em;
+    content: "\00a0"; }
+
+/* Horizontal rule */
+hr {
+  display: block;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid #dbdbdb; }
+
+/*
+   Media and embeds
+   ========================================================================== */
+/* Figures and images */
+figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2em 0; }
+  figure img,
+  figure iframe,
+  figure .fluid-width-video-wrapper {
+    margin-bottom: 1em; }
+  figure img {
+    width: 100%;
+    border-radius: 4px;
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s; }
+  figure > a {
+    display: block;
+    /* image hover animation */ }
+    figure > a:hover img {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  @media (min-width: 37.5em) {
+    figure.half > a,
+    figure.half > img {
+      width: calc(50% - 0.5em); } }
+  figure.half figcaption {
+    width: 100%; }
+  @media (min-width: 37.5em) {
+    figure.third > a,
+    figure.third > img {
+      width: calc(33.3333% - 0.5em); } }
+  figure.third figcaption {
+    width: 100%; }
+
+/* Figure captions */
+figcaption {
+  margin-bottom: 0.65rem;
+  color: #797979;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 0.8rem; }
+  figcaption a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #e2e2e2;
+    -webkit-transition: border 0.4s ease-in-out;
+    transition: border 0.4s ease-in-out; }
+    figcaption a:hover {
+      color: #000;
+      border-bottom-color: #000; }
+  figcaption code {
+    font-size: 0.64rem; }
+
+/* Fix IE9 SVG bug */
+svg:not(:root) {
+  overflow: hidden; }
+
+/*
+   Navigation lists
+   ========================================================================== */
+/**
+ * Removes margins, padding, and bullet points from navigation lists
+ *
+ * Example usage:
+ * <nav>
+ *    <ul>
+ *      <li><a href="#link-1">Link 1</a></li>
+ *      <li><a href="#link-2">Link 2</a></li>
+ *      <li><a href="#link-3">Link 3</a></li>
+ *    </ul>
+ *  </nav>
+ */
+nav ul {
+  margin: 0;
+  padding: 0; }
+nav li {
+  list-style: none; }
+nav a {
+  text-decoration: none; }
+
+/*
+   Global animation transition
+   ========================================================================== */
+b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item, .archive__item-thumb, .archive__item-body, .palette__swatch {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+/*
+   Fade-in
+   ========================================================================== */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/*
+   Spin
+   ========================================================================== */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg); } }
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg); } }
+/*
+   Magnific-Popup zoom-in
+   ========================================================================== */
+.mfp-zoom-in {
+  /* start state */
+  /* animate in */
+  /* animate out */ }
+  .mfp-zoom-in .mfp-with-anim {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  .mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .mfp-zoom-in.mfp-ready .mfp-with-anim {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  .mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.8; }
+  .mfp-zoom-in.mfp-removing .mfp-with-anim {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0; }
+  .mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0; }
+
+/*
+   Glitcher
+   ========================================================================== */
+@-webkit-keyframes glitch-start {
+  0% {
+    background-image: url("../images/black-glitched-1.png"); }
+  100% {
+    background-image: url("../images/black-glitched-2.png"); } }
+@keyframes glitch-start {
+  0% {
+    background-image: url("../images/black-glitched-1.png"); }
+  100% {
+    background-image: url("../images/black-glitched-2.png"); } }
+@-webkit-keyframes glitch-mid {
+  0% {
+    background-image: url("../images/black-glitched-3.png"); }
+  50% {
+    background-image: url("../images/black-glitched-4.png"); }
+  100% {
+    background-image: url("../images/black-glitched-2.png"); } }
+@keyframes glitch-mid {
+  0% {
+    background-image: url("../images/black-glitched-3.png"); }
+  50% {
+    background-image: url("../images/black-glitched-4.png"); }
+  100% {
+    background-image: url("../images/black-glitched-2.png"); } }
+@-webkit-keyframes glitch-end {
+  50% {
+    background-image: url("../images/black-glitched-1.png"); }
+  70% {
+    background-image: url("../images/black-glitched-4.png"); } }
+@keyframes glitch-end {
+  50% {
+    background-image: url("../images/black-glitched-1.png"); }
+  70% {
+    background-image: url("../images/black-glitched-4.png"); } }
+@-webkit-keyframes blur {
+  0% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 1; }
+  50% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 0.9; }
+  100% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 1; } }
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 1; }
+  50% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 0.9; }
+  100% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 1; } }
+@-webkit-keyframes shift {
+  50% {
+    -webkit-transform: translateX(1px);
+            transform: translateX(1px); }
+  51% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px); }
+  52% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  65% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+  67% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  90% {
+    -webkit-transform: translateX(-1px);
+            transform: translateX(-1px); } }
+@keyframes shift {
+  50% {
+    -webkit-transform: translateX(1px);
+            transform: translateX(1px); }
+  51% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px); }
+  52% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  65% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+  67% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  90% {
+    -webkit-transform: translateX(-1px);
+            transform: translateX(-1px); } }
+/*
+   Typed.js
+   ========================================================================== */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+          animation: blink 0.7s infinite; }
+
+@-webkit-keyframes ready {
+  to {
+    visibility: hidden; } }
+
+@keyframes ready {
+  to {
+    visibility: hidden; } }
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+/*
+   Container
+   ========================================================================== */
+.container {
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media (min-width: 600px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+  @media (min-width: 768px) {
+    .container {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
+  @media (min-width: 1024px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto; } }
+
+/*
+   Visibility
+   ========================================================================== */
+/* http://www.456bereastreet.com/archive/200711/screen_readers_sometimes_ignore_displaynone/ */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* for preloading images */
+.load {
+  display: none; }
+
+.transparent {
+  opacity: 0; }
+
+/* https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html */
+.visually-hidden,
+.screen-reader-text,
+.screen-reader-text span,
+.screen-reader-shortcut {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  width: 1px !important;
+  border: 0 !important;
+  overflow: hidden; }
+
+body:hover .visually-hidden a,
+body:hover .visually-hidden input,
+body:hover .visually-hidden button {
+  display: none !important; }
+
+/* screen readers */
+.screen-reader-text:focus,
+.screen-reader-shortcut:focus {
+  clip: auto !important;
+  height: auto !important;
+  width: auto !important;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 15px 23px 14px;
+  background: #fff;
+  z-index: 100000;
+  text-decoration: none;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); }
+
+/*
+   Skip links
+   ========================================================================== */
+.skip-link {
+  position: fixed;
+  z-index: 20;
+  margin: 0;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  white-space: nowrap; }
+
+.skip-link li {
+  height: 0;
+  width: 0;
+  list-style: none; }
+
+h1[id]:before, h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before, h6[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden; }
+
+/*
+   Type
+   ========================================================================== */
+/* center align */
+.center {
+  text-align: center; }
+
+/*
+   Alignment
+   ========================================================================== */
+.float-right {
+  clear: left; }
+  @media (min-width: 64em) {
+    .float-right {
+      float: right;
+      clear: none; } }
+
+/* clearfix */
+.cf {
+  clear: both; }
+
+/*
+   Images
+   ========================================================================== */
+/* image align right */
+.image-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 37.5em) {
+    .image-right {
+      float: right;
+      margin-left: 1em; } }
+
+/*
+   Icons
+   ========================================================================== */
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1.1em;
+  line-height: 1;
+  position: relative;
+  top: -0.1em;
+  vertical-align: middle; }
+  .icon.spin {
+    -webkit-animation: spin 2s infinite linear;
+            animation: spin 2s infinite linear; }
+
+.emoji {
+  margin: 0;
+  width: 1em;
+  max-width: 20px;
+  height: 1em;
+  max-height: 20px; }
+
+/*
+   Sticky, fixed to top content
+   ========================================================================== */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px; }
+  .sticky::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+/*
+   Default button
+   ========================================================================== */
+.btn {
+  /* default button */
+  display: inline-block;
+  margin-bottom: 0.25em;
+  padding: 10px 20px;
+  color: #fff !important;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #000;
+  border: 0 !important;
+  border-radius: 4px;
+  cursor: pointer;
+  /* fills width of parent container */
+  /* for dark backgrounds */
+  /* light outline */
+  /* information */
+  /* warning */
+  /* success */
+  /* danger */
+  /* disabled */
+  /* social buttons */ }
+  .btn:active {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px); }
+  .btn:hover {
+    background-color: #333333; }
+  .btn .icon {
+    margin-right: 0.5em; }
+  .btn .icon + .hidden {
+    margin-left: -0.5em; }
+  .btn--block {
+    display: block;
+    width: 100%; }
+    .btn--block + .btn--block {
+      margin-top: 0.25em; }
+  .btn--inverse {
+    color: #000 !important;
+    background-color: #fff; }
+    .btn--inverse:hover {
+      background-color: #cccccc; }
+  .btn--light-outline {
+    border: 1px solid #fff !important;
+    background-color: transparent; }
+  .btn--info {
+    background-color: #4473a8; }
+    .btn--info:hover {
+      background-color: #365c86; }
+  .btn--warning {
+    background-color: #daab1d; }
+    .btn--warning:hover {
+      background-color: #ae8917; }
+  .btn--success {
+    background-color: #33b96b; }
+    .btn--success:hover {
+      background-color: #299456; }
+  .btn--danger {
+    background-color: #c61224; }
+    .btn--danger:hover {
+      background-color: #9e0e1d; }
+  .btn--disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    box-shadow: none;
+    opacity: 0.65; }
+  .btn--facebook {
+    background-color: #3b5998; }
+    .btn--facebook:hover {
+      background-color: #2f477a; }
+  .btn--twitter {
+    background-color: #55acee; }
+    .btn--twitter:hover {
+      background-color: #448abe; }
+
+/* ==========================================================================
+   MASTHEAD
+   ========================================================================== */
+.masthead {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 53px;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
+  z-index: 11;
+  -webkit-animation: fade-in 3s;
+          animation: fade-in 3s;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.125); }
+  .masthead .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .masthead a {
+    color: #4c4c4c; }
+    .masthead a:hover {
+      color: #000; }
+  .masthead .overlay__menu-trigger {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-radius: 4px; }
+    .masthead .overlay__menu-trigger:before {
+      display: none; }
+    .masthead .overlay__menu-trigger:hover {
+      background-color: #e2e2e2; }
+
+@media (max-width: 600px) {
+  .masthead__menu-wrapper {
+    width: 100%; } }
+
+.masthead__menu {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 900px) {
+    .masthead__menu .is--hidden {
+      display: none; } }
+
+.masthead__title {
+  display: none; }
+  @media (min-width: 37.5em) {
+    .masthead__title {
+      display: block;
+      margin: 10px 0;
+      padding: 10px 0 10px 0;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 0.8rem;
+      text-transform: uppercase; } }
+
+.masthead__menu-item {
+  position: relative;
+  display: block;
+  margin: 10px 0 0;
+  padding: 10px 0 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 0.8rem;
+  /* underline effect */
+  /* active state */ }
+  .masthead__menu-item:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 6px;
+    width: 100%;
+    background-color: #4c4c4c;
+    -webkit-transition: all 300ms cubic-bezier(0.325, -0.075, 0, 1.65);
+    transition: all 300ms cubic-bezier(0.325, -0.075, 0, 1.65);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0); }
+  .masthead__menu-item:hover:before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  .masthead__menu-item.is--active {
+    color: #000;
+    cursor: default; }
+    .masthead__menu-item.is--active:before {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      background-color: #000; }
+  @media (min-width: 37.5em) {
+    .masthead__menu-item {
+      margin-left: 30px;
+      margin-right: 0; } }
+
+/*
+   Overlay menu
+   ========================================================================== */
+.overlay__menu {
+  /* by default it's hidden - on top of the viewport */
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 50px 0 0;
+  background-color: #f9f9f9;
+  z-index: 10;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  transition: -webkit-transform 0.4s cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  transition: transform 0.4s cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  transition: transform 0.4s cubic-bezier(0.86, 0.01, 0.77, 0.78), -webkit-transform 0.4s cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  .overlay__menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .overlay__menu a {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 5px 40px 5px 0;
+    color: #4c4c4c; }
+    .overlay__menu a:hover {
+      color: #000; }
+      .overlay__menu a:hover img {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .overlay__menu.is--visible {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+.overlay__menu-item {
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  @media (min-width: 48em) {
+    .overlay__menu-item {
+      width: 50%; } }
+  .overlay__menu-item a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .overlay__menu-item .menu-thumb {
+    display: block;
+    width: 100px;
+    height: 60px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: 1em; }
+    .overlay__menu-item .menu-thumb img {
+      width: 100px;
+      height: 60px;
+      border-radius: 4px; }
+  .overlay__menu-item .menu-text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .overlay__menu-item .menu-title {
+    font-size: 1.563rem;
+    line-height: 1.563rem; }
+  .overlay__menu-item .menu-excerpt {
+    font-size: 0.8rem; }
+
+.overlay__menu-item--secondary {
+  display: block;
+  padding-right: 0.5em;
+  font-size: 1.563rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  @media (min-width: 37.5em) {
+    .overlay__menu-item--secondary {
+      width: 50%; } }
+  @media (min-width: 64em) {
+    .overlay__menu-item--secondary {
+      line-height: 1.953rem; } }
+
+.overlay__menu-label {
+  margin: 30px 0 15px;
+  width: 100%;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  /* lines in headline */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .overlay__menu-label:after {
+    content: '\a0';
+    position: relative;
+    top: 0.4rem;
+    height: 4px;
+    background: #e2e2e2;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .overlay__menu-label:before {
+    margin-right: 10px; }
+  .overlay__menu-label:after {
+    margin-left: 10px; }
+
+.overlay__menu-close {
+  margin-top: 30px;
+  margin-bottom: 0;
+  width: 100%;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  text-transform: uppercase;
+  border-radius: 0; }
+  .overlay__menu-close:active {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+/*
+   Screen
+   ========================================================================== */
+#screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s; }
+  #screen.is--visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    cursor: pointer; }
+
+/* ==========================================================================
+   BREADCRUMB NAVIGATION
+   ========================================================================== */
+.breadcrumbs {
+  display: none; }
+
+/* ==========================================================================
+   SINGLE PAGE/POST
+   ========================================================================== */
+#main {
+  padding-top: 53px;
+  -webkit-animation: fade-in 2s;
+          animation: fade-in 2s; }
+
+/*
+   Hero
+   ========================================================================== */
+.page__hero {
+  position: relative;
+  margin: 0 -1rem 2em;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
+  @media (min-width: 37.5em) {
+    .page__hero {
+      margin-left: -2rem;
+      margin-right: -2rem; } }
+  @media (min-width: 48em) {
+    .page__hero {
+      margin-left: -3rem;
+      margin-right: -3rem; } }
+
+.page__hero-image {
+  width: 100%; }
+  @media (min-width: 75.9375em) {
+    .page__hero-image {
+      border-radius: 4px; } }
+
+.page__hero-credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 2px 5px;
+  color: #fff;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 0.64rem;
+  background: #000;
+  text-align: right;
+  z-index: 5;
+  opacity: 0.5;
+  border-radius: 4px 0 4px 0; }
+  @media (min-width: 48em) {
+    .page__hero-credit {
+      padding: 5px 10px; } }
+  .page__hero-credit a {
+    color: #fff;
+    text-decoration: none; }
+
+/*
+   Content
+   ========================================================================== */
+.post__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-top: 1em; }
+  @media (min-width: 37.5em) {
+    .post__content {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+                  -ms-grid-row-align: flex-start;
+              align-items: flex-start; } }
+
+.post__inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1em; }
+  @media (min-width: 56.25em) {
+    .post__inner-wrapper {
+      width: calc(100% - 200px); } }
+  @media (min-width: 64em) {
+    .post__inner-wrapper {
+      width: calc(100% - 240px); } }
+  @media (min-width: 1025px) {
+    .post__inner-wrapper {
+      width: calc(100% - 380px); } }
+
+.post__body {
+  width: 100%;
+  /* introductory paragraph */
+  /* cleaner underlines for links */
+  /* hide toc to avoid flash of content as it moves to sidebar */ }
+  .post__body p {
+    max-width: 45rem; }
+  .post__body > p:first-child {
+    margin-top: 0;
+    font-size: 1.125rem; }
+    @media (min-width: 48em) {
+      .post__body > p:first-child {
+        font-size: 1.25rem; } }
+  .post__body h1, .post__body h2, .post__body h3, .post__body h4, .post__body h5, .post__body h6 {
+    margin: 2rem 0 0;
+    font-family: "PT Serif", serif; }
+    .post__body h1 a, .post__body h2 a, .post__body h3 a, .post__body h4 a, .post__body h5 a, .post__body h6 a {
+      color: #4c4c4c; }
+  .post__body h2 {
+    margin-top: 3rem;
+    font-size: 1.563rem; }
+  .post__body h3 {
+    font-size: 1.25rem; }
+  .post__body h4, .post__body h5, .post__body h6 {
+    font-size: 1rem; }
+  .post__body p > a {
+    border-bottom: 1px solid #a9a9a9; }
+    .post__body p > a:hover {
+      color: #000;
+      border-bottom-color: #000; }
+  .post__body li > a,
+  .post__body td > a,
+  .post__body small a {
+    color: inherit;
+    border-bottom: 1px solid #a9a9a9; }
+    .post__body li > a:hover,
+    .post__body td > a:hover,
+    .post__body small a:hover {
+      color: #000;
+      border-bottom-color: #4c4c4c; }
+  .post__body ul li + li, .post__body ol li + li {
+    margin-top: 0.5em; }
+  .post__body .js-toc {
+    display: none; }
+
+/* header */
+.post__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (min-width: 75.9375em) {
+    .post__header {
+      margin-top: 1em; } }
+
+.post__title {
+  margin: 0;
+  font-family: "PT Serif", serif;
+  font-size: 1.953rem;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3; }
+
+.post__excerpt {
+  margin-bottom: 0;
+  max-width: 45rem;
+  font-size: 1.125rem;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4; }
+  @media (min-width: 48em) {
+    .post__excerpt {
+      font-size: 1.25rem; } }
+  .post__excerpt > a {
+    border-bottom: 1px solid #a9a9a9; }
+    .post__excerpt > a:hover {
+      color: #000;
+      border-bottom-color: #000; }
+
+/* footer */
+.post__footer {
+  margin-top: 2em;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
+
+/* author info */
+.author__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.author__name {
+  margin: 0;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; }
+  .author__name a:hover {
+    text-decoration: underline; }
+
+.author__bio {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 0.8rem; }
+
+.author__avatar {
+  display: block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-right: 1em; }
+  .author__avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px; }
+
+/* social */
+.post__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2em; }
+  .post__social .btn {
+    width: 100%; }
+  @media (min-width: 37.5em) {
+    .post__social {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .post__social .btn:first-child {
+        margin-right: 4px; }
+      .post__social .btn:last-child {
+        margin-left: 4px; } }
+
+/* taxonomy */
+.post__taxonomy {
+  margin-top: 2em;
+  font-size: 0.8rem;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+
+.post__taxonomy-item {
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-weight: bold;
+  color: #4c4c4c;
+  white-space: nowrap; }
+  .post__taxonomy-item:hover {
+    text-decoration: underline; }
+
+/* tag boxes */
+.tag__item {
+  display: block;
+  text-decoration: none;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  border-bottom-width: 0 !important; }
+  .tag__item:hover {
+    text-decoration: underline; }
+
+.tag__name {
+  float: left;
+  padding-right: 0.125em;
+  font-weight: normal;
+  font-family: "PT Serif", serif;
+  background: #f9f9f9; }
+
+.tag__count {
+  float: right;
+  padding-left: 0.125em;
+  background: #f9f9f9; }
+
+.tag__list {
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 3em;
+     -moz-column-gap: 3em;
+          column-gap: 3em; }
+  @media (min-width: 37.5em) {
+    .tag__list {
+      -webkit-column-count: 2;
+         -moz-column-count: 2;
+              column-count: 2;
+      -webkit-column-width: 150px;
+         -moz-column-width: 150px;
+              column-width: 150px; } }
+  @media (min-width: 48em) {
+    .tag__list {
+      -webkit-column-count: 3;
+         -moz-column-count: 3;
+              column-count: 3; } }
+  .tag__list li {
+    list-style-type: none;
+    font-size: 0.8rem;
+    line-height: 2; }
+    @media (min-width: 48em) {
+      .tag__list li {
+        line-height: 1.75; } }
+  .tag__list li + li {
+    margin-top: 0 !important; }
+  .tag__list .tag__item {
+    padding-bottom: 4px;
+    overflow: hidden; }
+    .tag__list .tag__item::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .tag__list .tag__item:before {
+      float: left;
+      width: 0;
+      content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+      white-space: nowrap;
+      color: #4c4c4c; }
+
+/*
+   Comments
+   ========================================================================== */
+.post__comments {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3; }
+
+#disqus_thread iframe {
+  margin-top: 2em; }
+
+.post__comments-form {
+  padding: 1em;
+  background: #ededed;
+  border: 1px solid #dbdbdb;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .post__comments-form.disabled input,
+  .post__comments-form.disabled button,
+  .post__comments-form.disabled textarea,
+  .post__comments-form.disabled label {
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    box-shadow: none;
+    opacity: 0.65; }
+  .post__comments-form .js-notice {
+    font-size: 0.8rem; }
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 0;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /* cleaner underlines */ }
+  .comment::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .comment:not(:last-child) {
+    border-bottom: 2px solid #e2e2e2; }
+  .comment p > a {
+    border-bottom: 1px solid #a9a9a9; }
+    .comment p > a:hover {
+      color: #000;
+      border-bottom-color: #000; }
+
+.comment__avatar-wrapper {
+  margin-right: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+.comment__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px; }
+
+.comment__content-wrapper {
+  float: right;
+  width: calc(100% - 60px); }
+
+.comment__author {
+  margin: 0; }
+  .comment__author a {
+    text-decoration: none; }
+
+.comment__date {
+  margin: 0;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 0.64rem;
+  text-transform: uppercase;
+  color: #4c4c4c; }
+  .comment__date a {
+    text-decoration: none; }
+
+/*
+   Sidebar
+   ========================================================================== */
+.post__sidebar {
+  width: 100%; }
+  @media (min-width: 56.25em) {
+    .post__sidebar {
+      margin-left: 80px;
+      width: 160px; } }
+  @media (min-width: 1025px) {
+    .post__sidebar {
+      margin-left: 80px;
+      width: 300px; } }
+  @media (max-width: 1025px) {
+    .post__sidebar .js-toc {
+      display: none !important; } }
+
+/* ads */
+.ad--sidebar {
+  margin: 0 0 2em;
+  text-align: center; }
+  @media (max-width: 320px) {
+    .ad--sidebar {
+      position: relative;
+      left: -15px; } }
+  @media (min-width: 320px) {
+    .ad--sidebar {
+      margin-left: auto;
+      margin-right: auto; } }
+
+/* ==========================================================================
+   ARCHIVE
+   ========================================================================== */
+.archive__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 1.5em;
+  /* hover state */ }
+  .archive__item:hover .archive__item-title,
+  .archive__item:hover .archive__item-excerpt {
+    color: #000; }
+  .archive__item:hover .archive__item-title {
+    text-decoration: underline; }
+  .archive__item:hover .archive__item-thumb {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.archive__item-body {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding: 1em 0 1em 1em; }
+
+.archive__item-title {
+  margin: 0 !important;
+  padding: 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.25rem; }
+
+.archive__item-meta {
+  margin-top: 0.5em;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 0.64rem;
+  text-transform: uppercase;
+  color: #4c4c4c; }
+
+.archive__item-time:before {
+  content: "";
+  padding-left: 0.45em;
+  padding-right: 0.45em; }
+
+.archive__item-excerpt {
+  margin: 0.5em 0 0;
+  padding: 0;
+  font-size: 0.8rem; }
+
+.archive__item-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background-color: #e2e2e2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 4px; }
+
+/* ==========================================================================
+   TABLE OF CONTENTS
+   ========================================================================== */
+.toc {
+  padding: 0 1em 1em;
+  font-family: "PT Sans Narrow", sans-serif;
+  border-top: 8px solid #4c4c4c; }
+
+.toc__title {
+  margin: 1em 0;
+  font-family: "PT Serif", serif;
+  font-size: 1.25rem;
+  color: #4c4c4c; }
+
+.toc__menu {
+  padding-left: 0;
+  font-size: 0.8rem;
+  border-bottom: 2px solid #e2e2e2; }
+  .toc__menu ul::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .toc__menu ul > li {
+    padding: 5px 0;
+    font-weight: normal; }
+    .toc__menu ul > li:before {
+      content: "\2192";
+      width: 20px; }
+    .toc__menu ul > li:not(:last-child) {
+      border-bottom: 1px solid #e2e2e2; }
+  .toc__menu li {
+    clear: both;
+    display: block;
+    font-weight: bold; }
+    .toc__menu li:before {
+      display: block;
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 5px;
+      width: 10px;
+      font-weight: bold; }
+    .toc__menu li a {
+      display: block; }
+      .toc__menu li a:hover {
+        text-decoration: underline; }
+  .toc__menu > li {
+    padding: 5px 0;
+    border-top: 2px solid #e2e2e2; }
+</style>
+    
+
+    <script>
+      /*
+loadCSS: load a CSS file asynchronously.
+[c]2015 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+
+(function(w){
+  "use strict";
+  /* exported loadCSS */
+  w.loadCSS = function( href, before, media ){
+    // Arguments explained:
+    // `href` [REQUIRED] is the URL for your CSS file.
+    // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+      // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+    // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+    var ss = w.document.createElement( "link" );
+    var ref;
+    if( before ){
+      ref = before;
+    }
+    else if( w.document.querySelectorAll ){
+      var refs = w.document.querySelectorAll(  "style,link[rel=stylesheet],script" );
+      // No need to check length. This script has a parent element, at least
+      ref = refs[ refs.length - 1];
+    }
+    else {
+      ref = w.document.getElementsByTagName( "script" )[ 0 ];
+    }
+
+    var sheets = w.document.styleSheets;
+    ss.rel = "stylesheet";
+    ss.href = href;
+    // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+    ss.media = "only x";
+
+    // Inject link
+      // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+      // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+    ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+    // A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+    ss.onloadcssdefined = function( cb ){
+      var defined;
+      for( var i = 0; i < sheets.length; i++ ){
+        if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+          defined = true;
+        }
+      }
+      if( defined ){
+        cb();
+      } else {
+        setTimeout(function() {
+          ss.onloadcssdefined( cb );
+        });
+      }
+    };
+
+    // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+    ss.onloadcssdefined(function() {
+      ss.media = media || "all";
+    });
+    return ss;
+  };
+}(this));
+
+      loadCSS("/assets/non-critical.css");
+    </script>
+    <noscript><link href="/assets/non-critical.css" rel="stylesheet"></noscript>
+
+    <script>
+      document.createElement("picture");
+    </script>
+    <script type="text/javascript" src="/assets/vendor/picturefill.min.js" async="true"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://localhost:4000/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="http://localhost:4000/manifest.json">
+    <meta name="msapplication-TileColor" content="#40393e">
+    <meta name="msapplication-TileImage" content="http://localhost:4000/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+  </head>
+
+  <body id="0">
+
+    
+      <section>
+        <h2 class="screen-reader-text">Skip links</h2>
+        <ul class="skip-link">
+          <li><a href="#nav-primary" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+          <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+          <li><a href="#colophon" class="screen-reader-shortcut">Skip to footer</a></li>
+        </ul>
+      </section>
+    
+
+    
+
+
+
+<header class="masthead">
+  <div class="container">
+    <a class="masthead__title" href="http://localhost:4000/">Made Mistakes</a>
+    <nav id="nav-primary" class="masthead__menu-wrapper">
+      <ul class="masthead__menu">
+        
+          <li><a href="http://localhost:4000/mastering-paper/" class="masthead__menu-item">← Mastering Paper by 53</a></li>
+        
+        
+        
+          
+            
+            <li><a href="http://localhost:4000/about/" class="masthead__menu-item ">About</a></li>
+            
+        
+          
+            
+            <li><a href="http://localhost:4000/contact/" class="masthead__menu-item is--hidden">Contact</a></li>
+            
+        
+          
+            
+            <li><a href="http://localhost:4000/work/" class="masthead__menu-item is--hidden">Work</a></li>
+            
+        
+          
+            
+            <li><a href="http://localhost:4000/articles/" class="masthead__menu-item is--hidden">Blog Articles</a></li>
+            
+        
+        <li><a href="#0" class="overlay__menu-trigger masthead__menu-item" aria-label="Navigation Menu" title="Navigation Menu">•&nbsp;•&nbsp;•</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<nav class="overlay__menu">
+  <div class="overlay__menu-wrapper container">
+    <ul class="overlay__menu-col-1">
+      <li class="overlay__menu-label">Of Interest</li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/work/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/work-portfolio-menu-thumb.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">Work Portfolio</div>
+              <div class="menu-excerpt">Things I’ve designed, illustrated, and developed
+</div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/articles/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/blog-articles-menu-thumb.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">Blog Articles</div>
+              <div class="menu-excerpt">Thoughts, inspiration, mistakes, and other minutia I’ve written
+</div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/mastering-paper/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/mastering-paper-menu-img.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">Mastering Paper</div>
+              <div class="menu-excerpt">Tutorials to help you master Paper by FiftyThree
+</div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/work/jekyll-themes/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/jekyll-themes-menu-item.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">Jekyll Themes</div>
+              <div class="menu-excerpt">Open source Jekyll themes
+</div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/procreate-paintings/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/procreate-paintings-menu-thumb.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">Procreate Paintings</div>
+              <div class="menu-excerpt">Portraits digitally painted with Procreate
+</div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/paperfaces/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/paperfaces-menu-thumb.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">PaperFaces Portraits</div>
+              <div class="menu-excerpt">Portraits digitally painted with Paper by FiftyThree
+</div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/tiny-paintings/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/tiny-paintings-menu-thumb.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">Tiny Paintings</div>
+              <div class="menu-excerpt">Mini watercolor portraits painted at really small sizes
+</div>
+            </div>
+          </a>
+        </li>
+      
+    </ul>
+    <ul class="overlay__menu-col-2">
+      <li class="overlay__menu-label">Everything Else</li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/about/">About</a></li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/faqs/">FAQs</a></li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/contact/">Contact</a></li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/support/">Support</a></li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/style-guide/">Style Guide</a></li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/terms/">Terms &amp; Policies</a></li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/sitemap/">Sitemap</a></li>
+      
+    </ul>
+  </div>
+  <button class="overlay__menu-close btn">[ESC] Close Menu</button>
+</nav>
+
+<div id="screen"></div>
+
+<!--[if lte IE 9]><div class="notice--danger center"><h4>Your browser is quite old!</h4><p>Why not <a href="http://whatbrowser.org/">upgrade to a more modern one</a> to better enjoy this site?</p></div><![endif]-->
+
+
+<div id="main" role="main">
+
+  <article itemscope itemtype="http://schema.org/CreativeWork">
+
+    <meta itemprop="description" content="A refresher tutorial on Paper by FiftyThree drawing and painting techniques along with a few color theory principles for good measure.">
+
+    <header class="container post__header">
+      <h1 class="post__title" itemprop="headline">Mastering Paper by FiftyThree: Back to the Basics
+</h1>
+      <meta itemprop="datePublished" content="February 09, 2014">
+      <meta itemprop="dateModified" content="January 28, 2015">
+      <div class="page__hero">
+  
+    <picture>
+    <source srcset="http://localhost:4000" media="(min-width: 1600px)">
+    <source srcset="http://localhost:4000" media="(min-width: 1024px)">
+    <source srcset="http://localhost:4000" media="(min-width: 768px)">
+    <source srcset="http://localhost:4000" media="(min-width: 600px)">
+    <source srcset="http://localhost:4000">
+    <img src="http://localhost:4000" class="page__hero-image" itemprop="image" alt="Mastering Paper by FiftyThree: Back to the Basics" >
+  </picture>
+
+  
+  
+</div>
+
+      
+
+
+
+<nav class="breadcrumbs">
+  <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="http://localhost:4000" class="breadcrumb__item" itemprop="url">
+      <span itemprop="title">Home</span>
+    </a> <span class="breadcrumb__sep">×</span>
+  </span>
+  <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="http://localhost:4000/mastering-paper/" class="breadcrumb__item" itemprop="url">
+      <span itemprop="title">Mastering Paper by 53</span>
+    </a>
+  </span>
+</nav><!-- /.breadcrumbs -->
+
+    </header>
+
+    
+
+    <div class="container post__content">
+
+      <div class="post__inner-wrapper">
+
+        <section class="post__body" itemprop="text">
+          <p>Reading through my earlier guides I came to the realization that I glossed over many basic drawing and painting techniques. Since I refer to the same techniques over and over again it would probably be helpful if I actually explained them. So here is my attempt at remedying that.</p>
+
+<nav class="js-toc toc">
+  <h4 class="toc__title">Contents</h4>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#pencil-techniques" id="markdown-toc-pencil-techniques">Pencil Techniques</a>    <ul>
+      <li><a href="#painting-with-pencil" id="markdown-toc-painting-with-pencil">Painting with Pencil</a></li>
+    </ul>
+  </li>
+  <li><a href="#ink-techniques" id="markdown-toc-ink-techniques">Ink Techniques</a>    <ul>
+      <li><a href="#parallel-hatching" id="markdown-toc-parallel-hatching">Parallel Hatching</a></li>
+      <li><a href="#contour-hatching" id="markdown-toc-contour-hatching">Contour Hatching</a></li>
+      <li><a href="#cross-hatching" id="markdown-toc-cross-hatching">Cross Hatching</a></li>
+      <li><a href="#stippling" id="markdown-toc-stippling">Stippling</a></li>
+      <li><a href="#ink-blobs-and-drips" id="markdown-toc-ink-blobs-and-drips">Ink Blobs and Drips</a></li>
+    </ul>
+  </li>
+  <li><a href="#watercolor-brush-techniques" id="markdown-toc-watercolor-brush-techniques">Watercolor Brush Techniques</a>    <ul>
+      <li><a href="#painting-smooth" id="markdown-toc-painting-smooth">Painting Smooth</a></li>
+      <li><a href="#feathering-edges" id="markdown-toc-feathering-edges">Feathering Edges</a></li>
+      <li><a href="#lightening-with-white" id="markdown-toc-lightening-with-white">Lightening with White</a></li>
+      <li><a href="#glazing" id="markdown-toc-glazing">Glazing</a></li>
+      <li><a href="#underpainting" id="markdown-toc-underpainting">Underpainting</a></li>
+    </ul>
+  </li>
+  <li><a href="#color-theory-basics" id="markdown-toc-color-theory-basics">Color Theory Basics</a>    <ul>
+      <li><a href="#primary-colors" id="markdown-toc-primary-colors">Primary Colors</a></li>
+      <li><a href="#complementary-colors-and-grays" id="markdown-toc-complementary-colors-and-grays">Complementary Colors and Grays</a></li>
+      <li><a href="#atmospheric-perspective" id="markdown-toc-atmospheric-perspective">Atmospheric Perspective</a></li>
+    </ul>
+  </li>
+  <li><a href="#wrap-up-and-whats-next" id="markdown-toc-wrap-up-and-whats-next">Wrap Up and What’s Next</a></li>
+</ul>
+
+</nav>
+
+<h2 id="pencil-techniques">Pencil Techniques</h2>
+
+<p>I once described Paper’s pencil tool as <em>versatile and perfect in almost any situation</em>. When used in conjunction with a <a href="http://localhost:4000/mastering-paper/pogo-connect-smart-pen/">Pogo Connect</a> or <a href="http://localhost:4000/mastering-paper/pencil-53-review/">FiftyThree’s Pencil stylus</a>, those sentiments ring even truer. So what exactly can you do with the tool?</p>
+
+<h3 id="painting-with-pencil">Painting with Pencil</h3>
+
+<p>Learning how to produce a continuous tone with the pencil tool is a worthwhile endeavor that I encourage you to practice. Once mastered you will have the skill needed to fade values into one another and model forms three dimensionally.</p>
+
+<p>A couple of points to keep in mind for creating an even tone.</p>
+
+<ol>
+  <li>Work in one direction moving parallel (example: up/down, left/right).</li>
+  <li>Don’t be tempted to overwork and area — keep moving at a steady pace.</li>
+  <li>If you are using a stylus with a sensitive tip (e.g. a Pogo Connect), don’t vary the amount of pressure you apply — keep it constant and light unless you’re trying to fade the tone.</li>
+</ol>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-pencil-shading-samples.jpg" alt="Pencil shading samples" />
+  <figcaption>Examples of shading using the pencil tool</figcaption>
+</figure>
+
+<p>Once you’ve gotten the hang of producing a range of smooth values, it can be fun to introduce additional colors to the mix. Colors can be dry blended by overlapping pencil strokes directly on canvas, giving the impression that they’ve been mixed.</p>
+
+<div class="notice--info">
+  <h4 id="protip-dry-mixing">ProTip: Dry Mixing</h4>
+  <p>Avoid overlapping one color with the other too much. Doing so will kill the translucency of the pencil strokes and any mixing that might have occurred.</p>
+</div>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-colored-pencil-mixes.jpg" alt="Colored pencil mixes" />
+  <figcaption>Dry mixing colored pencils</figcaption>
+</figure>
+
+<h2 id="ink-techniques">Ink Techniques</h2>
+
+<p>Out of the two ink tools that Paper comes with, the <a href="http://localhost:4000/mastering-paper/introduction-tool-guide/#ink-pen">pen</a> (or <em>Write</em> as FiftyThree calls it) is much easier to produce consistent results with. Stroke speed and pressure do little to modify the line quality which allows you to focus more on accuracy and placement. The <a href="http://localhost:4000/mastering-paper/introduction-tool-guide/#fountain-pen">fountain pen</a> on the other hand can make drawing a line without weight fluctuations incredibly challenging — as shown below.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-ink-tools-comparison.jpg" alt="Comparing straight lines made with the ink tools" />
+  <figcaption>Comparing ink tools and the lines they make</figcaption>
+</figure>
+
+<p>By all means use whatever tool you’re most comfortable with. If you’re new to drawing on an iPad and just want to practice the following techniques, do yourself a solid and stick with the ink pen.</p>
+
+<p>There are many techniques for suggesting light and shadow when drawing with ink but they all follow the same general principle. <em>Draw marks</em> where there are shadows, and <em>leave the canvas blank</em> where there are highlights.</p>
+
+<h3 id="parallel-hatching">Parallel Hatching</h3>
+
+<p>As the name implies, the lines you will be making should run parallel to each other. These lines can be vertical, horizontal, or at an angle — pick one and stick with it throughout the drawing. By drawing lines closer together they will appear to blend and create the illusion of being darker.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-parallel-ink-lines.jpg" alt="Parallel hatching examples" />
+  <figcaption>Examples of parallel hatching</figcaption>
+</figure>
+
+<p>Another way to modify the overall tone created by these lines is to vary their thickness. This can be achieved by using the fountain pen and drawing thicker lines by pressing harder (if you use a Pogo Connect stylus) or making quick swipes (if you’re using a normal stylus or your finger).</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-parallel-ink-lines-vary.jpg" alt="Parallel hatching thicker line example" />
+  <figcaption>Varying the line width using the fountain pen</figcaption>
+</figure>
+
+<h3 id="contour-hatching">Contour Hatching</h3>
+
+<p>If you’re feeling confident and have honed your powers of observation by drawing <a href="http://localhost:4000/mastering-paper/contour-drawing/">blind contours</a>, you should be all set for contour hatching. Instead of making straight marks like we did with parallel hatching, you will draw lines that follow the curved contours of your subject.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-ink-contour-hatching.jpg" alt="Contour hatching examples" />
+  <figcaption>Examples of contour hatching</figcaption>
+</figure>
+
+<p>Personally I don’t often have the patience required to create an accurate drawing using this technique. When done well contour hatching will enhance the form of your subject and make it appear more three dimensional.</p>
+
+<h3 id="cross-hatching">Cross Hatching</h3>
+
+<p>Cross hatching is exactly what you’d expect, hatch marks that cross one another. It’s an effective way to quickly darken or <em>shade</em> a subject. I like to use the parallel hatching technique and build on that by crossing the lines at a slight angle. Contour lines can also be crossed for more life like results.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-ink-cross-hatching.jpg" alt="Cross hatching examples" />
+  <figcaption>Examples of cross hatching</figcaption>
+</figure>
+
+<h3 id="stippling">Stippling</h3>
+
+<p>Instead of using lines to create tone and texture, you can use small marks. Much like the hatching techniques described above you vary the tone by increasing the density of these marks — the higher the concentration the darker it will appear.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-ink-stippling.jpg" alt="Stippling examples" />
+  <figcaption>Examples of stippling techniques</figcaption>
+</figure>
+
+<p>The placement of these marks can be as expressive or mathematically as you want. I prefer to be free and loose, but don’t let that limit what feels right to you. Stippling marks can be anything you want — short ticks, dots, crosses, circles. And they can even be combined with hatching to add detail and enhance the effect.</p>
+
+<div class="notice--info">
+  <h4 id="protip-hatching-----not-just-for-inking">ProTip: Hatching — Not Just for Inking</h4>
+  <p>Most of the ink techniques above can be adapted to the pencil tool and used to shade and create gradations of tone — specifically parallel, contour, and cross hatching.</p>
+</div>
+
+<h3 id="ink-blobs-and-drips">Ink Blobs and Drips</h3>
+
+<p>Using both ink pens and the pencil you can simulate ink splatter, blobs, and dribs. The idea here is to recreate those happy accidents in a natural and random way. To start create a grouping of small circles and dots using the fountain pen.</p>
+
+<figure class="half">
+  <img src="http://localhost:4000/images/paper-53-ink-blobs.jpg" alt="Ink circles and a few dots" />
+  <img src="http://localhost:4000/images/paper-53-ink-blobs-irregular.jpg" alt="Adding variation to the circles" />
+  <figcaption>Creating ink blobs, splatter, and drips</figcaption>
+</figure>
+
+<p>To make these shapes more irregular, zoom in and distort their shape by adding bumps and points along the edges. You don’t have to overdo this step — small variations here and there will do the trick.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-ink-blobs-detail.jpg" alt="Adding detail to ink blobs" />
+  <figcaption>Adding detail to ink blobs</figcaption>
+</figure>
+
+<p>Applying a few shadows and highlights with the pencil tool can make these shapes pop off the canvas. Draw a few dark strokes on one side of the blob, and then using a light color draw a highlight on the opposite side. Depending on how thick of a blob you are going for you may need to add a cast shadow using the pencil or watercolor brush filled with a light gray.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-ink-blobs-variation.jpg" alt="Adding shadows and highlights to blobs" />
+  <figcaption>Ink splatter variations</figcaption>
+</figure>
+
+<h2 id="watercolor-brush-techniques">Watercolor Brush Techniques</h2>
+
+<p>I’m going to go ahead and assume you’ve already read my <a href="http://localhost:4000/mastering-paper/introduction-tool-guide/#watercolor-brush">Paper by 53 Introduction and Tool Guide</a>, where I explain how the brush works and some of its nuances. With this understanding the following four techniques should make more sense.</p>
+
+<h3 id="painting-smooth">Painting Smooth</h3>
+
+<p>The question that hits my inbox the most is “how do you paint so smoothly?” Well here’s my secret. Paint a <strong>continuous stroke</strong>, <strong>without lifting</strong> your finger or stylus. If you lift and dab an area multiple times it will darken and turn bumpy — don’t do that!</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-choppy-smooth-paint.jpg" alt="Choppy and smoothly painted shapes" />
+  <figcaption>A choppy painted shape vs. one painted smoothly</figcaption>
+</figure>
+
+<p>The other important variable to consider is moving your finger (or stylus) across the screen at a slow pace. If you rub in a circle motion on an area that is light it will eventually darken to its maximum point. As long as you <strong>don’t lift</strong> as you circle over these lighter spots, everything will even out.</p>
+
+<figure>
+  <iframe width="560" height="315" src="//www.youtube.com/embed/AjJVrFFaCck" frameborder="0"> </iframe>
+  <figcaption>Here's how I paint a shape smoothly.</figcaption>
+</figure>
+
+<h3 id="feathering-edges">Feathering Edges</h3>
+
+<p>Reliably producing a painted edge that is soft and blurry becomes important when blending shapes into each other. To achieve this effect you need to gradually increase the speed of your stroke as you approach the edge you want to feather.</p>
+
+<figure>
+  <iframe width="560" height="315" src="//www.youtube.com/embed/RrFlav38uZw" frameborder="0"> </iframe>
+  <figcaption>Feathering an edge with the watercolor brush</figcaption>
+</figure>
+
+<p>A wet-on-wet effect can be simulated by feathering brush strokes into each other. Getting the perfect fade can be tricky, so don’t be afraid to rewind and trying again. <em>I almost never get it right the first time.</em></p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-paint-feathered-colors.jpg" alt="Blended shapes" />
+  <figcaption>Shapes blended into each other by feathering the edges</figcaption>
+</figure>
+
+<h3 id="lightening-with-white">Lightening with White</h3>
+
+<p>The watercolor brush has the unique ability of lightening previously painted or drawn areas when filled with white. This can be an effective way of pulling highlights out of your subject or to erase mistakes.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-paint-white-range.jpg" alt="Range of white tints" />
+  <figcaption>Various tints made by mixing colors with white</figcaption>
+</figure>
+
+<div class="notice--info">
+  <h4 id="protip-paint-with-tints">ProTip: Paint with Tints</h4>
+  <p>Lightening with colors tinted<sup id="fnref:tint"><a href="#fn:tint" class="footnote">1</a></sup> with white often yield better results and are easier to control than a solid white.</p>
+</div>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-paint-white-lightening.jpg" alt="Lightening an area with white" />
+  <figcaption>Lightening an area with white</figcaption>
+</figure>
+
+<p>White paint behaves slightly different from the other colors available in the mixer and default palettes. Much like painting with pure black it fills in quickly. Which means if you use it to paint, you have to move fast or risk completely covering up anything you paint over with white.</p>
+
+<div class="notice--info">
+  <h4 id="protip-dab-fast">ProTip: Dab Fast</h4>
+  <p>Quick, short strokes in a dabbing motion work great for lightening an area gradually.</p>
+</div>
+
+<h3 id="glazing">Glazing</h3>
+
+<p>When painting with the brush you are essentially spreading layers of transparent paint (or a glaze<sup id="fnref:glazing"><a href="#fn:glazing" class="footnote">2</a></sup>) on top of each other. These glazes don’t actually mix with one another, but because they are translucent, colors can appear to combine when layered. Glazes also have the benefit of increasing the depth and brightness (luminosity) of a color with each successive layer.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-watercolor-layers.jpg" alt="Glazes created with the watercolor brush" />
+  <figcaption>Layering glazes makes for a richer and more deep color</figcaption>
+</figure>
+
+<p>I like to think of glazes as my <em>color harmonizers</em> that tint everything with a similar hue. A great way to tie a piece together if your colors aren’t quite working together.</p>
+
+<figure class="half">
+  <img src="http://localhost:4000/images/paper-53-paint-harmony-1.jpg" alt="Glaze harmonizing before image" />
+  <img src="http://localhost:4000/images/paper-53-paint-harmony-2.jpg" alt="Glaze harmonizing after image" />
+  <figcaption>Applying a glaze to harmonize a color palette</figcaption>
+</figure>
+
+<h3 id="underpainting">Underpainting</h3>
+
+<p>If glazes are applied on top of a painting or drawing, underpaintings are the layers applied below. They are most often used to pre-tone the canvas by removing white from it. The color(s) you choose can have a profound effect on digital pigments and strokes applied on top of them.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-red-underpainting-foliage.jpg" alt="Red underpainting with green tree comparison" />
+  <figcaption>Naked canvas on the left, pre-toned on the right to increase vibrancy.</figcaption>
+</figure>
+
+<p>For example, contrasting colors can create some vibrancy in the scene. A lush landscape filled with a cool sky and green trees, pre-toned with a reddish glaze will cause the space around the leaves to shine through. Much more than if the canvas was left white.</p>
+
+<p>Or you can tone the canvas with the composition’s dominant color. When doing detail work you won’t have to worrying about covering up the bits of white canvas that show through. The background will roughly match what you are painting as your main subject, saving you precious time.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-underpainting-value-shapes.jpg" alt="Blocking out shapes with watercolor" />
+  <figcaption>Working out the shapes and values of a composition before adding detail</figcaption>
+</figure>
+
+<p>An underpainting layer can also be used to establish the correct values and confirm the composition of your subject. Think of it as <em>sketching</em> with the brush, but instead of making contour lines you are blocking out rough shapes of value to capture your subject.</p>
+
+<h2 id="color-theory-basics">Color Theory Basics</h2>
+
+<h3 id="primary-colors">Primary Colors</h3>
+
+<p>Thinking back to elementary school you probably heard the term <strong>primary color</strong> thrown around. The idea of a primary color is that it should be possible to mix every other color out of these three. Traditionally these three primary colors have been red, yellow, and blue.</p>
+
+<p>Now I wouldn’t go as far as suggesting you mix primary colors on canvas<sup id="fnref:on-canvas"><a href="#fn:on-canvas" class="footnote">3</a></sup> to produce secondary and tertiary colors, but it’s worth understanding how they’re made.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-traditional-color-wheel.jpg" alt="Traditional color wheel" />
+  <figcaption>Traditional color wheel</figcaption>
+</figure>
+
+<h3 id="complementary-colors-and-grays">Complementary Colors and Grays</h3>
+
+<p>On the traditional color wheel complementary colors are across from each other (red and green, blue and orange, yellow and violet). When complements are mixed together, they should result in a neutral gray.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-layering-complements.jpg" alt="Mixing complementary colors together" />
+  <figcaption>As you can see, in Paper complementary colors that are mixed on canvas don't exactly turn to a neutral gray.</figcaption>
+</figure>
+
+<p>Since mixing complements visually on canvas doesn’t result in a neutral gray in Paper, we can mix them another way. The results aren’t quite the same as if you were mixing oil paints on a real palette, but they get the job done. Here’s how to do it:</p>
+
+<ol>
+  <li>Select the two complementary colors you wish to mix and put one in the Color Mixer by dragging it over, and the other in one of your open palette slots.</li>
+  <li>To neutralize them, do one full rotation of the Color Mixer with both complementary colors selected.</li>
+  <li>Finally tap the color in the Mixer and slide the saturation (middle bar) down somewhere between 10–20% to dull it.</li>
+</ol>
+
+<figure class="third">
+  <img src="http://localhost:4000/images/paper-53-mixing-complementary-gray-1.jpg" alt="Mixing a neutral gray step 1" />
+  <img src="http://localhost:4000/images/paper-53-mixing-complementary-gray-2.jpg" alt="Mixing a neutral gray step 2" />
+  <img src="http://localhost:4000/images/paper-53-mixing-complementary-gray-3.jpg" alt="Mixing a neutral gray step 3" />
+  <figcaption>Neutralizing complementary colors using the Color Mixer</figcaption>
+</figure>
+
+<p>I’ve found that instead of mixing grays from white and black, it is more pleasing to mix them from pairs of complementary colors. This gives you a limitless amount of “grays” to pull from for your palettes.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-paint-range-grays.jpg" alt="Range of grays from mixing complements" />
+  <figcaption>Range of grays made by mixing complementary colors and desaturating them</figcaption>
+</figure>
+
+<p>Mixing complements also helps to unify your composition’s palette. Using these “neutral grays” as glazes and layering them on top of each other is a useful way for making shadows.</p>
+
+<h3 id="atmospheric-perspective">Atmospheric Perspective</h3>
+
+<p>Atmospheric perspective is the phenomenon where intense foreground colors gradually change until they match the sky. As you travel back objects generally lose saturation in color, becoming grayer. For example warm colors like red and orange will dull and cool off.</p>
+
+<p>The amount of contrast in the subject also changes. The illuminated and shadowed sides of an object lower in contrast and flatten as you move further into the background. These objects also begin to loss clarity and will blur and become fuzzy — a perfect subject for the <a href="http://localhost:4000/mastering-paper/pencil-first-look/">Blend tool</a>.</p>
+
+<figure>
+  <img src="http://localhost:4000/images/paper-53-atmospheric-perspective.jpg" alt="Atmospheric perspective example" />
+  <figcaption>An example of atmospheric perspective in this mountain background</figcaption>
+</figure>
+
+<div class="notice--info">
+  <h4 id="protip-color-temperature">ProTip: Color Temperature</h4>
+  <p>If you learn one thing about working with color make it this: <em>Warm colors advance, and cool colors recede.</em> The reverse is also true but much more rare in nature.</p>
+</div>
+
+<h2 id="wrap-up-and-whats-next">Wrap Up and What’s Next</h2>
+
+<p>Well there you have it. With this crash course in pencil shading, ink techniques, watercolor glazes, and the basics of color theory my other guides should hopefully make more sense now. And if they don’t just hit up the comments below with questions and feedback.</p>
+
+<p>Oh, and I just finished writing a first draft of the next Mastering Paper by FiftyThree installment all about painting skin and faces. Should be ready just as soon as I finish illustrating it in the coming week…</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:tint">
+      <p>Adding white to a color raises it to a tint or a <em>pastel</em> color and increases it’s saturation some — adjust accordingly to keep harmony with your color palette. <a href="#fnref:tint" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:glazing">
+      <p>Glazing is a watercolor technique that uses a thin, transparent pigment applied over dry existing washes. Its purpose is to adjust the color and tone of the underlying wash. <a href="#fnref:glazing" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:on-canvas">
+      <p>Visually mixing colors directly on canvas can be fun, but the results aren’t always the best. I suggest using the Color Mixer instead since you’ll achieve more vibrant hues. <a href="#fnref:on-canvas" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        </section>
+
+        
+        <div class="post__taxonomy">
+          
+
+
+
+
+Filed under: <span class="post__taxonomy-wrapper" itemprop="keywords">
+
+  
+  
+     <a href="http://localhost:4000/tag/color-theory/" class="post__taxonomy-item" rel="tag">color theory</a>, 
+
+  
+  
+     <a href="http://localhost:4000/tag/drawing/" class="post__taxonomy-item" rel="tag">drawing</a>, 
+
+  
+  
+     <a href="http://localhost:4000/tag/ipad/" class="post__taxonomy-item" rel="tag">iPad</a>, 
+
+  
+  
+     <a href="http://localhost:4000/tag/painting/" class="post__taxonomy-item" rel="tag">painting</a>, 
+
+  
+  
+     <a href="http://localhost:4000/tag/paper-by-53/" class="post__taxonomy-item" rel="tag">Paper by 53</a>, 
+
+  
+  
+     and <a href="http://localhost:4000/tag/tutorial/" class="post__taxonomy-item" rel="tag">tutorial</a>
+
+</span>
+
+        </div>
+        
+
+        <div class="post__social">
+  
+    
+      <a class="btn" href="#comments"><svg class="icon"><use xlink:href="#icon-comments"></use></svg> 18 Comments</a>
+    
+  
+
+  
+    <a class="btn btn--twitter" href="https://twitter.com/share?url=http://localhost:4000/mastering-paper/basics/&via=mmistakes&text=Mastering+Paper+by+FiftyThree%3A+Back+to+the+Basics%0A" target="_blank" title="Share on Twitter"><svg class="icon"><use xlink:href="#icon-twitter"></use></svg> Tweet</a>
+    <a class="btn btn--facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/mastering-paper/basics/" target="_blank" title="Share on Facebook"><svg class="icon"><use xlink:href="#icon-facebook"></use></svg> Share</a>
+  
+</div>
+
+
+        
+  <section class="post__comments">
+    
+      
+        <!-- Start static comments -->
+        <div id="comments" class="js-comments">
+          <h3 class="tile__header">Comments</h3>
+          
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment1" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&s=50" srcset="https://www.gravatar.com/avatar/?d=mm&s=100 2x" alt="Tamara" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <span itemprop="name">Tamara</span>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment1" itemprop="url">
+        <time datetime="2014-02-09T23:08:40-05:00" itemprop="datePublished">February 10, 2014 at 04:08 AM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>This? This is freakin’ awesome! Thanks so much for sharing your mad skills and expertise with us!</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment2" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&s=50" srcset="https://www.gravatar.com/avatar/?d=mm&s=100 2x" alt="Will" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <span itemprop="name">Will</span>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment2" itemprop="url">
+        <time datetime="2014-02-12T00:42:10-05:00" itemprop="datePublished">February 12, 2014 at 05:42 AM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>Nicely done! Looking forward to more how-to articles!</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment3" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://disqus.com/api/users/avatars/rackom.jpg" alt="rackom" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <span itemprop="name">rackom</span>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment3" itemprop="url">
+        <time datetime="2014-02-12T02:36:53-05:00" itemprop="datePublished">February 12, 2014 at 07:36 AM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>Great tutorial! :) Keep going.</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment4" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://disqus.com/api/users/avatars/jamesdaly90.jpg" alt="James Daly" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <a rel="nofollow" href="http://jamesdaly.life"><span itemprop="name">James Daly</span></a>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment4" itemprop="url">
+        <time datetime="2014-03-19T00:38:37-04:00" itemprop="datePublished">March 19, 2014 at 04:38 AM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>You are amazing, thank you so much for making these articles!</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment5" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&s=50" srcset="https://www.gravatar.com/avatar/?d=mm&s=100 2x" alt="Ben Hoffer" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <span itemprop="name">Ben Hoffer</span>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment5" itemprop="url">
+        <time datetime="2014-04-06T16:15:57-04:00" itemprop="datePublished">April 06, 2014 at 08:15 PM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>You good sir are the man…thanks for sharing your brilliance :)</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment6" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&s=50" srcset="https://www.gravatar.com/avatar/?d=mm&s=100 2x" alt="Hong" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <span itemprop="name">Hong</span>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment6" itemprop="url">
+        <time datetime="2014-04-07T07:09:34-04:00" itemprop="datePublished">April 07, 2014 at 11:09 AM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>Very nice written articles, looking forward to the new ones!</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment7" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&s=50" srcset="https://www.gravatar.com/avatar/?d=mm&s=100 2x" alt="AbbyObi" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <span itemprop="name">AbbyObi</span>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment7" itemprop="url">
+        <time datetime="2014-07-12T05:23:50-04:00" itemprop="datePublished">July 12, 2014 at 09:23 AM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>Awesome! Thanks for the great tutorial :)</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment8" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://disqus.com/api/users/avatars/idol_chan.jpg" alt="idol chan" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <span itemprop="name">idol chan</span>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment8" itemprop="url">
+        <time datetime="2014-09-09T08:14:21-04:00" itemprop="datePublished">September 09, 2014 at 12:14 PM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>the level of awesomeness is too damn high</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment9" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&s=50" srcset="https://www.gravatar.com/avatar/?d=mm&s=100 2x" alt="lesley" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <span itemprop="name">lesley</span>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment9" itemprop="url">
+        <time datetime="2014-12-10T02:26:01-05:00" itemprop="datePublished">December 10, 2014 at 07:26 AM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>Fantastic help for getting started with 53. Thanks so much. Your work is amazing</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment10" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&s=50" srcset="https://www.gravatar.com/avatar/?d=mm&s=100 2x" alt=" Al." height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <span itemprop="name"> Al.</span>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment10" itemprop="url">
+        <time datetime="2015-01-17T15:13:08-05:00" itemprop="datePublished">January 17, 2015 at 08:13 PM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><ol>
+  <li>Need the most basic instruction of all!!! How do I start a new drawing, by bringing up a blank page, which allows me to <em>swipe</em> up to bring in the tool <em>bar</em></li>
+</ol>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment11" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://disqus.com/api/users/avatars/mmistakes.jpg" alt="Michael Rose" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <a rel="nofollow" href="https://mademistakes.com/"><span itemprop="name">Michael Rose</span></a>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment11" itemprop="url">
+        <time datetime="2015-01-17T15:41:28-05:00" itemprop="datePublished">January 17, 2015 at 08:41 PM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>Pinch the page and it will zoom out to a view that allows you to swipe through, add, or delete pages. Pinch again and you’ll see all of your journals. For more help check FiftyThree’s support page, it has videos and animations showing how to do all the basics.</p>
+
+<p><a href="http://support.fiftythree.com/customer/portal/articles/892210-basic-features">http://support.fiftythree.com/customer/portal/articles/892210-basic-features</a></p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment12" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&s=50" srcset="https://www.gravatar.com/avatar/?d=mm&s=100 2x" alt="KA" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <span itemprop="name">KA</span>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment12" itemprop="url">
+        <time datetime="2015-03-22T04:34:16-04:00" itemprop="datePublished">March 22, 2015 at 08:34 AM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>Thank you for this guide!! There is still one thing I do not understand: I have watched your video on the watercolor tool and tried to colour slowly and evenly in one go but the final outcome still looks blotchy. I’m using my finger for this, could that be it?</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment13" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://disqus.com/api/users/avatars/mmistakes.jpg" alt="Michael Rose" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <a rel="nofollow" href="https://mademistakes.com/"><span itemprop="name">Michael Rose</span></a>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment13" itemprop="url">
+        <time datetime="2015-03-22T10:05:28-04:00" itemprop="datePublished">March 22, 2015 at 02:05 PM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>I’ve noticed that painting with the Pencil stylus allows you paint faster and does seem to produce a smoother tone easier, but the same effect is possible using just your finger.</p>
+
+<p>Try moving in a small circular pattern as you paint, it will help even things. And of course do not lift your finger off the screen or else you’ll start to darken areas and won’t get that smooth tone.</p>
+
+<p>Other than that keep practicing.</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment14" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&s=50" srcset="https://www.gravatar.com/avatar/?d=mm&s=100 2x" alt="Graham Krewinghaus" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <span itemprop="name">Graham Krewinghaus</span>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment14" itemprop="url">
+        <time datetime="2015-07-15T12:16:53-04:00" itemprop="datePublished">July 15, 2015 at 04:16 PM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>Hi Michael,</p>
+
+<p>I was scrolling down your page, looking for inspiration (which I do whenever I have drawer’s block), and I saw your ink splatter example and wondered if you could put that in some more detail. Would you mind maybe explaining your process more extensively?</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment15" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://disqus.com/api/users/avatars/mmistakes.jpg" alt="Michael Rose" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <a rel="nofollow" href="https://mademistakes.com/"><span itemprop="name">Michael Rose</span></a>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment15" itemprop="url">
+        <time datetime="2015-07-15T14:05:01-04:00" itemprop="datePublished">July 15, 2015 at 06:05 PM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>There’s not much more to the process than what I included above.</p>
+
+<ol>
+  <li>Use the pen tools to create the general shape and fill it in.</li>
+  <li>Add some dots of various sizes around it to simulate the splatter.</li>
+  <li>To make some blobs look more 3D add highlights using white or another light color with the pencil tool.</li>
+  <li>To finish it off add a drop shadow with a light gray and the watercolor brush, zoom in, and paint quickly along the edge where you want to cast a shadow.</li>
+</ol>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment16" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://disqus.com/api/users/avatars/ltucker7.jpg" alt="Laura Tucker" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <a rel="nofollow" href="http://www.lauratucker.com/"><span itemprop="name">Laura Tucker</span></a>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment16" itemprop="url">
+        <time datetime="2015-09-09T10:23:41-04:00" itemprop="datePublished">September 09, 2015 at 02:23 PM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>I just found your site and articles about Paper and want to thank you!</p>
+
+<p>They are beautiful, very well written and have inspired me to get more out of my Pencil and Paper.</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment17" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://disqus.com/api/users/avatars/mmistakes.jpg" alt="Michael Rose" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <a rel="nofollow" href="https://mademistakes.com/"><span itemprop="name">Michael Rose</span></a>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment17" itemprop="url">
+        <time datetime="2015-09-09T10:27:00-04:00" itemprop="datePublished">September 09, 2015 at 02:27 PM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>You’re welcome Laura! Glad you’ve found them useful.</p>
+</div>
+  </div>
+</article>
+
+          
+            
+            
+            
+            
+            
+            
+            <article id="comment18" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__avatar-wrapper">
+    
+      <img class="comment__avatar" src="https://disqus.com/api/users/avatars/ltucker7.jpg" alt="Laura Tucker" height="50" width="50">
+    
+  </div>
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <a rel="nofollow" href="http://www.lauratucker.com/"><span itemprop="name">Laura Tucker</span></a>
+      
+    </h3>
+    <div class="comment__date">
+      
+        <a href="#comment18" itemprop="url">
+        <time datetime="2015-09-09T11:17:24-04:00" itemprop="datePublished">September 09, 2015 at 03:17 PM</time>
+        </a>
+      
+    </div>
+    <div itemprop="text"><p>My pleasure, Michael. I posted a couple of links to your articles on a blog I wrote a couple of months back so my readers can find them.</p>
+</div>
+  </div>
+</article>
+
+          
+        </div>
+        <!-- End static comments -->
+      
+
+      <!-- Start new comment form -->
+      <h3 class="tile__header">Leave a Comment</h3>
+      <p class="instruct">Your email address will not be published. Required fields are marked <span class="required">*</span></p>
+      <form id="comment-form" class="post__comments-form js-form form" method="post" action="https://api.staticman.net/v1/entry/mmistakes/made-mistakes-jekyll/master">
+        <fieldset>
+          <label for="comment-form-message">Comment<small class="required">*</small> <small>(<a href="https://daringfireball.net/projects/markdown/">Markdown</a> is supported)</small></label>
+          <textarea type="text" rows="3" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
+        </fieldset>
+        <fieldset>
+          <label for="comment-form-name">Name<small class="required">*</small></label>
+          <input type="text" id="comment-form-name" name="fields[name]" tabindex="2" />
+        </fieldset>
+        <fieldset>
+          <label for="comment-form-email">Email address<small class="required">*</small></label>
+          <input type="email" id="comment-form-email" name="fields[email]" tabindex="3" />
+        </fieldset>
+        <fieldset>
+          <label for="comment-form-url">Website <small>(optional)</small></label>
+          <input type="url" id="comment-form-url" name="fields[url]" tabindex="4"/>
+        </fieldset>
+        <fieldset class="hidden">
+          <input type="hidden" name="options[slug]" value="basics">
+          <input type="hidden" name="fields[hidden]"/>
+        </fieldset>
+        <!-- Start comment form alert messaging -->
+        <p class="hidden js-notice">
+          <span class="js-notice-text"></span>
+        </p>
+        <!-- End comment form alert messaging -->
+        <fieldset>
+          <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--large">Submit Comment</button>
+        </fieldset>
+      </form>
+      <!-- End new comment form -->
+    
+  </section>
+
+
+
+        
+        <footer class="post__footer">
+          <div class="author__wrapper">
+  <div class="author__text">
+    <h5 class="author__name">
+      <a href="http://localhost:4000/about/"><span class="author__name--bold" itemprop="author">Michael Rose</span></a>
+    </h5>
+    <p class="author__bio">Just another boring, tattooed, time traveling designer.</p>
+  </div>
+  <a href="http://localhost:4000/about/" class="author__avatar"><img src="/images/bio-photo.jpg" alt="Michael Rose avatar"></a>
+</div>
+
+        </footer>
+        
+
+      </div>
+
+      <aside class="post__sidebar sticky">
+        <div class="toc--sidebar"></div>
+        
+<div class="ad--sidebar">
+  <ins class="adsbygoogle adsense--sidebar"
+    style="display:inline-block"
+    data-ad-client=""
+    data-ad-slot=""></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+      </aside>
+
+    </div>
+
+  </article>
+
+  
+    <div class="container related">
+  <h3 class="tile__header">You May Also Enjoy</h3>
+  <div class="tiles">
+    
+      <article class="tile__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <meta itemprop="text" content="How to use the Grid Method with Paper by FiftyThree to create accurate line drawings and improve your work.">
+        <a href="http://localhost:4000/mastering-paper/grid-method/">
+          <img src="http://localhost:4000/images/paper-53-grid-teaser.jpg" itemprop="image" alt="Mastering Paper by FiftyThree: The Grid Method">
+          
+          <h3 class="tile__title" itemprop="headline">The Grid Method
+</h3>
+          
+        </a>
+        
+          
+          
+          <a href="http://localhost:4000/mastering-paper/" class="tile__category">Mastering Paper by 53</a>
+        
+      </article>
+    
+      <article class="tile__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <meta itemprop="text" content="Learn how to reposition Paper by FiftyThree's zoom loupe mid-stroke to help add detail to your drawings.">
+        <a href="http://localhost:4000/mastering-paper/moving-the-loupe/">
+          <img src="http://localhost:4000/images/paper-53-zoom-loupe-teaser.jpg" itemprop="image" alt="Mastering Paper by FiftyThree: How to Use Zoom While Painting">
+          
+          <h3 class="tile__title" itemprop="headline">How to Use Zoom While Painting
+</h3>
+          
+        </a>
+        
+          
+          
+          <a href="http://localhost:4000/mastering-paper/" class="tile__category">Mastering Paper by 53</a>
+        
+      </article>
+    
+      <article class="tile__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <meta itemprop="text" content="Advanced techniques for drawing and painting portraits using the iPad app Paper by FiftyThree.">
+        <a href="http://localhost:4000/mastering-paper/drawing-faces/">
+          <img src="http://localhost:4000/images/paper-53-faces-teaser-2016.jpg" itemprop="image" alt="Mastering Paper by FiftyThree: Drawing Portraits and Faces">
+          
+          <h3 class="tile__title" itemprop="headline">Drawing Portraits and Faces
+</h3>
+          
+        </a>
+        
+          
+          
+          <a href="http://localhost:4000/mastering-paper/" class="tile__category">Mastering Paper by 53</a>
+        
+      </article>
+    
+  </div>
+</div>
+
+  
+
+</div>
+
+<footer id="colophon" class="colophon">
+  <nav class="container">
+    <ul class="colophon__menu">
+      
+        <li class="colophon__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+      
+        <li class="colophon__menu-item"><a href="http://localhost:4000/faqs/">FAQs</a></li>
+      
+        <li class="colophon__menu-item"><a href="http://localhost:4000/contact/">Contact</a></li>
+      
+        <li class="colophon__menu-item"><a href="http://localhost:4000/support/">Support</a></li>
+      
+        <li class="colophon__menu-item"><a href="http://localhost:4000/terms/">Terms &amp; Policies</a></li>
+      
+    </ul>
+    <p class="colophon__copyright">&#169; 2016 Michael Rose, <a href="http://localhost:4000/humans.txt">a real human being</a>. <a href="https://github.com/mmistakes/made-mistakes-jekyll/" title="view source on GitHub" rel="nofollow">Hand-crafted</a> with <a href="http://jekyllrb.com/" rel="nofollow">Jekyll</a>.</p>
+  </nav>
+</footer>
+
+
+
+    
+      <svg style="display: none;"><symbol viewBox="9.084 9.084 17.25 17.25" id="icon-amazon"><title>amazon</title><path d="M19.287 13.53c-.418.036-.9.072-1.382.144-.738.104-1.477.247-2.086.563-1.19.53-1.992 1.66-1.992 3.32 0 2.083 1.22 3.14 2.76 3.14.516 0 .933-.068 1.317-.175.61-.212 1.125-.6 1.735-1.305.354.53.45.776 1.06 1.342.16.07.32.07.45-.036.385-.352 1.058-.988 1.412-1.342.16-.143.128-.352.032-.53-.354-.494-.706-.918-.706-1.87v-3.177c0-1.344.096-2.578-.802-3.495-.74-.744-1.896-1.024-2.793-1.024h-.386c-1.638.105-3.37.88-3.757 3.107-.063.28.13.388.258.424l1.798.248c.193-.038.29-.213.32-.39.162-.775.74-1.164 1.38-1.234h.13c.385 0 .8.178 1.028.528.254.425.224.99.224 1.484v.278zm-.353 4.2c-.225.494-.61.813-1.028.92-.064 0-.16.035-.256.035-.706 0-1.125-.6-1.125-1.483 0-1.128.61-1.66 1.38-1.906.418-.105.9-.142 1.382-.142v.424c0 .813.03 1.447-.353 2.152zm7.4 4.903v.115c-.018.69-.35 2.015-1.134 2.743-.157.135-.314.058-.245-.135.23-.612.75-2.033.507-2.358-.174-.25-.89-.23-1.5-.173-.278.04-.523.056-.715.1-.174.017-.21-.155-.035-.288.228-.172.472-.306.75-.404.994-.324 2.147-.134 2.304.078.034.053.068.168.068.323zm-1.657 1.34c-.227.192-.47.366-.715.522-1.83 1.21-4.203 1.84-6.26 1.84-3.316 0-6.28-1.344-8.53-3.587-.194-.173-.037-.422.19-.29 2.425 1.555 5.425 2.496 8.53 2.496 1.955 0 4.063-.403 6.07-1.268.14-.056.296-.135.436-.19.314-.155.593.23.28.478z"/></symbol><symbol viewBox="0 0 60.801 60.801" id="icon-comments"><title>comments</title><path fill-rule="evenodd" clip-rule="evenodd" d="M19 34.194h26.605v-7.588h-30.41v7.588H19zm26.605-19h-30.41V22.8h30.41v-7.61zM60.8 7.606V3.804C60.8 1.704 59.095 0 56.998 0H3.804C1.704 0 0 1.705 0 3.804v41.802c0 2.097 1.705 3.78 3.804 3.78h28.498L49.392 60.8V49.387h7.605c2.097 0 3.804-1.684 3.804-3.78v-38zm-7.607 34.195h-11.39v5.696l-9.5-5.696H7.608V7.607h45.583v34.195zm0 0"/></symbol><symbol viewBox="0 0 60.734 60.733" id="icon-facebook"><title>facebook</title><path d="M57.378 0H3.352C1.502 0 0 1.5 0 3.354V57.38c0 1.852 1.502 3.353 3.352 3.353h29.086v-23.52h-7.914v-9.166h7.914v-6.76c0-7.843 4.79-12.116 11.787-12.116 3.355 0 6.232.252 7.07.36v8.2h-4.853c-3.805 0-4.54 1.81-4.54 4.463v5.85h9.08l-1.188 9.167h-7.892v23.52h15.475c1.852 0 3.355-1.503 3.355-3.35V3.35C60.732 1.5 59.23 0 57.378 0z"/></symbol><symbol viewBox="149.8 37.8 499.818 525" id="icon-loading"><title>loading</title><path d="M557.8 187.8c13.8 0 24.6-10.8 24.6-24.6s-10.8-24.6-24.6-24.6-24.6 10.8-24.6 24.6c0 13.2 10.8 24.6 24.6 24.6zm61.2 90.6c-16.8 0-30.6 13.8-30.6 30.6s13.8 30.6 30.6 30.6 30.6-13.8 30.6-30.6c.6-16.8-13.2-30.6-30.6-30.6zm-61.2 145.2c-20.4 0-36.6 16.2-36.6 36.6 0 20.4 16.2 36.6 36.6 36.6 20.4 0 36.6-16.2 36.6-36.6.6-20.4-16.2-36.6-36.6-36.6zM409 476.4c-24 0-43.2 19.2-43.2 43.2s19.2 43.2 43.2 43.2 43.2-19.2 43.2-43.2-19.2-43.2-43.2-43.2zM260.8 411c-27 0-49.2 22.2-49.2 49.2s22.2 49.2 49.2 49.2 49.2-22.2 49.2-49.2-22.2-49.2-49.2-49.2zm-10.2-102c0-27.6-22.8-50.4-50.4-50.4-27.6 0-50.4 22.8-50.4 50.4 0 27.6 22.8 50.4 50.4 50.4 27.6 0 50.4-22.2 50.4-50.4zm10.2-199.8c-30 0-54 24-54 54s24 54 54 54 54-24 54-54-24.6-54-54-54zM409 37.8c-35.4 0-63.6 28.8-63.6 63.6S374.2 165 409 165s63.6-28.8 63.6-63.6-28.2-63.6-63.6-63.6z"/></symbol><symbol viewBox="12.057 0 411.391 435.504" id="icon-paypal"><title>paypal</title><path d="M403.497 101.917c-4.105-5.073-8.877-9.705-14.166-13.84.708 13.118-.507 27.093-3.667 41.885-8.627 40.413-29.256 74.754-59.656 99.304-30.375 24.533-68.305 37.502-109.687 37.502h-60.344l-19.533 91.512c-3.836 17.96-19.943 30.99-38.303 30.99H70.938l-4.898 22.484c-1.258 5.79.17 11.838 3.887 16.453 3.715 4.613 9.324 7.297 15.25 7.297h66.498c9.24 0 17.225-6.46 19.152-15.494L193.667 313h76.188c36.854 0 70.526-11.465 97.384-33.152 26.868-21.697 45.128-52.186 52.806-88.162 7.777-36.377 2.206-66.58-16.55-89.77zM117.292 354.192l22.84-107.01h76.188c36.853 0 70.527-11.465 97.384-33.153 26.866-21.698 45.13-52.187 52.81-88.162 7.772-36.378 2.206-66.58-16.554-89.77C331.952 13.833 301.17 0 269.633 0H103.64c-9.21 0-17.175 6.417-19.136 15.414l-72 330.524c-1.26 5.79.17 11.838 3.888 16.453 3.713 4.614 9.32 7.296 15.248 7.296h66.5c9.24.002 17.22-6.457 19.152-15.494zm60.943-278.9h52.23c12.286 0 23.274 5.148 30.145 14.128 7.298 9.54 9.43 22.73 5.853 36.188-.047.17-.088.342-.13.516-6.57 27.73-33.893 50.29-60.898 50.29h-50.05l22.85-101.123z"/></symbol><symbol viewBox="391.375 216.374 17.25 17.25" id="icon-stopwatch"><title>stopwatch</title><path d="M400.957 222.124v3.833c0 .53-.427.957-.957.957s-.957-.426-.957-.957v-3.833h1.914zM407.605 225c.53 4.198-2.447 8.035-6.648 8.562-4.198.53-8.035-2.447-8.562-6.65-.53-4.197 2.447-8.034 6.648-8.56v-1.98h1.914v1.98c1.144.08 2.88.796 3.744 1.548l1.4-1.398 1.354 1.355-1.398 1.398c.752.866 1.47 2.6 1.55 3.745zm-1.855.958c0-3.177-2.573-5.75-5.75-5.75s-5.75 2.573-5.75 5.75 2.573 5.75 5.75 5.75 5.75-2.574 5.75-5.75z"/></symbol><symbol viewBox="364.771 6.607 21.207 17.25" id="icon-twitter"><title>twitter</title><path d="M385.98 8.642s-.83 1.34-2.17 2.247c.276 6.148-4.217 12.968-12.376 12.968-4.06 0-6.662-1.97-6.662-1.97s3.194.67 6.426-1.775c-3.27-.197-4.06-3.034-4.06-3.034s.905.235 1.97-.08c-3.666-.907-3.507-4.336-3.507-4.336s.907.552 1.97.552c-3.31-2.562-1.34-5.833-1.34-5.833s2.996 4.217 8.988 4.572c-.867-4.77 4.612-6.977 7.41-3.98 1.46-.237 2.8-1.065 2.8-1.065s-.474 1.617-1.932 2.405c1.18-.082 2.483-.673 2.483-.673z"/></symbol></svg>
+      <script type="text/javascript" src="/assets/main.js" async="true"></script>
+    
+
+    <!-- Google Universal Analytics -->
+    <script async>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '', 'mademistakes.com');
+      ga('send', 'pageview');
+    </script>
+
+    
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+    <!-- QR code -->
+    <div id="qr" class="hidden">
+      <img src="https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=http://localhost:4000/mastering-paper/basics/&choe=UTF-8" alt="Scan QR code with a smartphone">
+      <p><small>http://localhost:4000/mastering-paper/basics/</small></p>
+    </div>
+
+  </body>
+
+</html>
+

@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+      <title>A Designer’s Faux Pas × Made Mistakes</title>
+    
+
+    
+      <meta name="description" content="Making stuff one mistake at a time." />
+    
+
+    <!-- Sharing Meta -->
+
+  <meta name="twitter:title" property="og:title" content="A Designer’s Faux Pas">
+
+<meta name="twitter:url" property="og:url" content="http://localhost:4000/">
+
+  <meta name="twitter:description" property="og:description" content="Making stuff one mistake at a time.">
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:creator" content="@mmistakes">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="http://localhost:4000/images/site-logo.png">
+
+<meta property="og:locale" content="en_US">
+
+<meta property="og:site_name" content="Made Mistakes">
+
+
+
+    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="http://localhost:4000/sitemap.xml">
+
+    <link href="http://feeds.feedburner.com/MadeMistakes" type="application/atom+xml" rel="alternate" title="Made Mistakes &#8211; Everything">
+    <link href="http://feeds.feedburner.com/MadeMistakesArticles" type="application/atom+xml" rel="alternate" title="Made Mistakes &#8211; Articles">
+    <link href="http://feeds.feedburner.com/MadeMistakesMasteringPaper" type="application/atom+xml" rel="alternate" title="Made Mistakes &#8211; Mastering Paper">
+    <link href="http://feeds.feedburner.com/MadeMistakesPaperFaces" type="application/atom+xml" rel="alternate" title="Made Mistakes &#8211; PaperFaces Portraits">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Webmaster Tools verifications -->
+    <meta name="google-site-verification" content="">
+    <meta name="msvalidate.01" content="">
+    <meta name="alexaVerifyID" content="">
+    <meta name="yandex-verification" content="">
+
+    <link rel="author" href="https://plus.google.com/+MichaelRoseDesign/posts?rel=author">
+
+    
+      <style>/* ==========================================================================
+   GLITCH CRITICAL CSS
+   ========================================================================== */
+/* ==========================================================================
+   SCSS VARIABLES
+   ========================================================================== */
+/*
+   Typography related variables
+   ========================================================================== */
+/*
+   Color variables
+   ========================================================================== */
+/*
+   Masthead
+   ========================================================================== */
+/*
+   Form variables
+   ========================================================================== */
+/*
+   Code snippet variables
+   ========================================================================== */
+/*
+   Screen sizes
+   ========================================================================== */
+/*
+   Visual sitemap
+   ========================================================================== */
+/*
+   Animation
+   ========================================================================== */
+/*
+   Vendor
+   ========================================================================== */
+/* ==========================================================================
+   MIXINS
+   ========================================================================== */
+a:focus {
+  /* default */
+  outline: thin dotted #f3bc15;
+  /* Webkit */
+  outline: 5px auto #f3bc15;
+  outline-offset: -2px; }
+
+/*
+   em Function
+   ========================================================================== */
+/*
+   Bourbon Clearfix
+   ========================================================================== */
+/*
+   Typography Related Mixins
+   ========================================================================== */
+/* Vertical rhythm
+   https://github.com/sturobson/Sassifaction */
+/**
+ * In this mixin you can specify the font size in PX and
+ * it will calculate the REM based on your $doc-font-size
+ * & $doc-line-height variables.
+ *
+ *  @include font-size(24);
+ *
+ * It will also create a bottom margin based on the
+ * $doc-font-size & $doc-line-height variables unless you
+ * specify that it shouldn't have one.
+ *
+ *  @include font-size(24, no);
+ *
+ * Or if you want to specify a different bottom margin to
+ * be generated.
+ *
+ *  @include font-size(24, 32);
+ *
+ * This mixin also generates a pixel-less line height by
+ * default unless you specify that you either don't want
+ * one where I'd suggest declaring 1 within the mixin.
+ *
+ *  @include font-size(24, yes, 1);
+ *
+ * There's also the option to specify a different line-height
+ * for it to generate to, where you would specify the
+ * line-height in (effectively) it's pixel value.
+ *
+ *  @include font-size(24, yes, 40);
+ */
+/* ==========================================================================
+   STYLE RESETS
+   ========================================================================== */
+html {
+  /* apply a natural box layout model to all elements */
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  font-size: 15px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px; } }
+  @media (min-width: 1024px) {
+    html {
+      font-size: 18px; } }
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* remove margin */
+body {
+  margin: 0; }
+
+/* selected elements */
+::-moz-selection {
+  color: #fff;
+  background: #000; }
+::selection {
+  color: #fff;
+  background: #000; }
+
+/* display HTML5 elements in IE6-9 and FF3 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block; }
+
+/* display block in IE6-9 and FF3 */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* prevents modern browsers from displaying 'audio' without controls */
+audio:not([controls]) {
+  display: none; }
+
+/* remove blue color */
+a {
+  color: inherit; }
+
+/* apply focus state */
+/* remove outline from links */
+a:hover,
+a:active {
+  outline: 0; }
+
+/* prevent sub and sup affecting line-height in all browsers */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* img border in anchor's and image quality */
+img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+/* prevent max-width from affecting Google Maps */
+#map_canvas img,
+.google-maps img {
+  max-width: none; }
+
+/* consistent form font size in all browsers, margin changes, misc */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle; }
+
+button,
+input {
+  *overflow: visible;
+  line-height: normal; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer; }
+
+input[type="search"] {
+  box-sizing: content-box;
+  -webkit-appearance: textfield; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* ==========================================================================
+   BASE ELEMENTS
+   ========================================================================== */
+/*
+   Breakpoint-Sass
+   ========================================================================== */
+/*
+   Typography
+   ========================================================================== */
+/* Modular scale
+ *  one    - 2.441
+ *  two    - 1.953
+ *  three  - 1.563
+ *  four   - 1.25
+ *  five   - 1
+ *  six    - 0.8
+ *  seven  - 0.64
+ *  eight  - 0.512
+ */
+body {
+  margin: 0;
+  padding: 0;
+  color: #4c4c4c;
+  font-family: "PT Serif", serif;
+  line-height: 1.5; }
+  body.overflow--hidden {
+    /* when primary navigation is visible, the content in the background won't scroll */
+    overflow: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25; }
+
+small {
+  font-size: 0.8rem; }
+
+u,
+ins {
+  text-decoration: none;
+  border-bottom: 1px solid #4c4c4c; }
+  u a,
+  ins a {
+    color: inherit; }
+
+del a {
+  color: inherit; }
+
+/* reduce orphans and widows when printing */
+p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
+  orphans: 3;
+  widows: 3; }
+
+/* Abbreviations */
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: none;
+  cursor: help;
+  border-bottom: 1px dotted #4c4c4c; }
+
+/* Blockquotes */
+blockquote {
+  margin: 2em 1em 2em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-style: italic;
+  border-left: 0.25em solid #f3bc15; }
+  blockquote a {
+    color: inherit; }
+  blockquote cite {
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 0.8rem;
+    font-style: normal; }
+    blockquote cite:before {
+      content: "\2014";
+      padding-right: 5px; }
+
+/* Links */
+a {
+  text-decoration: none; }
+  a:hover, a:active {
+    outline: 0; }
+
+/* Lists */
+@media (min-width: 37.5em) {
+  ol, ul {
+    padding-left: 0; }
+    ol ol, ol ul, ul ol, ul ul {
+      padding: 0.5em 1em; } }
+
+/* Code */
+tt, code, kbd, samp, pre {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 0.8rem; }
+
+pre {
+  overflow-x: auto; }
+
+p code,
+li code,
+figcaption code {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  background: #eeeeee;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px; }
+  p code:before, p code:after,
+  li code:before,
+  li code:after,
+  figcaption code:before,
+  figcaption code:after {
+    letter-spacing: -0.2em;
+    content: "\00a0"; }
+
+/* Horizontal rule */
+hr {
+  display: block;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid #dbdbdb; }
+
+/*
+   Media and embeds
+   ========================================================================== */
+/* Figures and images */
+figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2em 0; }
+  figure img,
+  figure iframe,
+  figure .fluid-width-video-wrapper {
+    margin-bottom: 1em; }
+  figure img {
+    width: 100%;
+    border-radius: 4px;
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s; }
+  figure > a {
+    display: block;
+    /* image hover animation */ }
+    figure > a:hover img {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  @media (min-width: 37.5em) {
+    figure.half > a,
+    figure.half > img {
+      width: calc(50% - 0.5em); } }
+  figure.half figcaption {
+    width: 100%; }
+  @media (min-width: 37.5em) {
+    figure.third > a,
+    figure.third > img {
+      width: calc(33.3333% - 0.5em); } }
+  figure.third figcaption {
+    width: 100%; }
+
+/* Figure captions */
+figcaption {
+  margin-bottom: 0.65rem;
+  color: #797979;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 0.8rem; }
+  figcaption a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #e2e2e2;
+    -webkit-transition: border 0.4s ease-in-out;
+    transition: border 0.4s ease-in-out; }
+    figcaption a:hover {
+      color: #000;
+      border-bottom-color: #000; }
+  figcaption code {
+    font-size: 0.64rem; }
+
+/* Fix IE9 SVG bug */
+svg:not(:root) {
+  overflow: hidden; }
+
+/*
+   Navigation lists
+   ========================================================================== */
+/**
+ * Removes margins, padding, and bullet points from navigation lists
+ *
+ * Example usage:
+ * <nav>
+ *    <ul>
+ *      <li><a href="#link-1">Link 1</a></li>
+ *      <li><a href="#link-2">Link 2</a></li>
+ *      <li><a href="#link-3">Link 3</a></li>
+ *    </ul>
+ *  </nav>
+ */
+nav ul {
+  margin: 0;
+  padding: 0; }
+nav li {
+  list-style: none; }
+nav a {
+  text-decoration: none; }
+
+/*
+   Global animation transition
+   ========================================================================== */
+b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item, .archive__item-thumb, .archive__item-body, .palette__swatch {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+/*
+   Fade-in
+   ========================================================================== */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/*
+   Spin
+   ========================================================================== */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg); } }
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg); } }
+/*
+   Magnific-Popup zoom-in
+   ========================================================================== */
+.mfp-zoom-in {
+  /* start state */
+  /* animate in */
+  /* animate out */ }
+  .mfp-zoom-in .mfp-with-anim {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  .mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .mfp-zoom-in.mfp-ready .mfp-with-anim {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  .mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.8; }
+  .mfp-zoom-in.mfp-removing .mfp-with-anim {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0; }
+  .mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0; }
+
+/*
+   Glitcher
+   ========================================================================== */
+@-webkit-keyframes glitch-start {
+  0% {
+    background-image: url("../images/black-glitched-1.png"); }
+  100% {
+    background-image: url("../images/black-glitched-2.png"); } }
+@keyframes glitch-start {
+  0% {
+    background-image: url("../images/black-glitched-1.png"); }
+  100% {
+    background-image: url("../images/black-glitched-2.png"); } }
+@-webkit-keyframes glitch-mid {
+  0% {
+    background-image: url("../images/black-glitched-3.png"); }
+  50% {
+    background-image: url("../images/black-glitched-4.png"); }
+  100% {
+    background-image: url("../images/black-glitched-2.png"); } }
+@keyframes glitch-mid {
+  0% {
+    background-image: url("../images/black-glitched-3.png"); }
+  50% {
+    background-image: url("../images/black-glitched-4.png"); }
+  100% {
+    background-image: url("../images/black-glitched-2.png"); } }
+@-webkit-keyframes glitch-end {
+  50% {
+    background-image: url("../images/black-glitched-1.png"); }
+  70% {
+    background-image: url("../images/black-glitched-4.png"); } }
+@keyframes glitch-end {
+  50% {
+    background-image: url("../images/black-glitched-1.png"); }
+  70% {
+    background-image: url("../images/black-glitched-4.png"); } }
+@-webkit-keyframes blur {
+  0% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 1; }
+  50% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 0.9; }
+  100% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 1; } }
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 1; }
+  50% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 0.9; }
+  100% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 1; } }
+@-webkit-keyframes shift {
+  50% {
+    -webkit-transform: translateX(1px);
+            transform: translateX(1px); }
+  51% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px); }
+  52% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  65% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+  67% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  90% {
+    -webkit-transform: translateX(-1px);
+            transform: translateX(-1px); } }
+@keyframes shift {
+  50% {
+    -webkit-transform: translateX(1px);
+            transform: translateX(1px); }
+  51% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px); }
+  52% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  65% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+  67% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  90% {
+    -webkit-transform: translateX(-1px);
+            transform: translateX(-1px); } }
+/*
+   Typed.js
+   ========================================================================== */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+          animation: blink 0.7s infinite; }
+
+@-webkit-keyframes ready {
+  to {
+    visibility: hidden; } }
+
+@keyframes ready {
+  to {
+    visibility: hidden; } }
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+/*
+   Container
+   ========================================================================== */
+.container {
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media (min-width: 600px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+  @media (min-width: 768px) {
+    .container {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
+  @media (min-width: 1024px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto; } }
+
+/*
+   Visibility
+   ========================================================================== */
+/* http://www.456bereastreet.com/archive/200711/screen_readers_sometimes_ignore_displaynone/ */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* for preloading images */
+.load {
+  display: none; }
+
+.transparent {
+  opacity: 0; }
+
+/* https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html */
+.visually-hidden,
+.screen-reader-text,
+.screen-reader-text span,
+.screen-reader-shortcut {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  width: 1px !important;
+  border: 0 !important;
+  overflow: hidden; }
+
+body:hover .visually-hidden a,
+body:hover .visually-hidden input,
+body:hover .visually-hidden button {
+  display: none !important; }
+
+/* screen readers */
+.screen-reader-text:focus,
+.screen-reader-shortcut:focus {
+  clip: auto !important;
+  height: auto !important;
+  width: auto !important;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 15px 23px 14px;
+  background: #fff;
+  z-index: 100000;
+  text-decoration: none;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); }
+
+/*
+   Skip links
+   ========================================================================== */
+.skip-link {
+  position: fixed;
+  z-index: 20;
+  margin: 0;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  white-space: nowrap; }
+
+.skip-link li {
+  height: 0;
+  width: 0;
+  list-style: none; }
+
+h1[id]:before, h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before, h6[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden; }
+
+/*
+   Type
+   ========================================================================== */
+/* center align */
+.center {
+  text-align: center; }
+
+/*
+   Alignment
+   ========================================================================== */
+.float-right {
+  clear: left; }
+  @media (min-width: 64em) {
+    .float-right {
+      float: right;
+      clear: none; } }
+
+/* clearfix */
+.cf {
+  clear: both; }
+
+/*
+   Images
+   ========================================================================== */
+/* image align right */
+.image-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 37.5em) {
+    .image-right {
+      float: right;
+      margin-left: 1em; } }
+
+/*
+   Icons
+   ========================================================================== */
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1.1em;
+  line-height: 1;
+  position: relative;
+  top: -0.1em;
+  vertical-align: middle; }
+  .icon.spin {
+    -webkit-animation: spin 2s infinite linear;
+            animation: spin 2s infinite linear; }
+
+.emoji {
+  margin: 0;
+  width: 1em;
+  max-width: 20px;
+  height: 1em;
+  max-height: 20px; }
+
+/*
+   Sticky, fixed to top content
+   ========================================================================== */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px; }
+  .sticky::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+/*
+   Default button
+   ========================================================================== */
+.btn {
+  /* default button */
+  display: inline-block;
+  margin-bottom: 0.25em;
+  padding: 10px 20px;
+  color: #fff !important;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #000;
+  border: 0 !important;
+  border-radius: 4px;
+  cursor: pointer;
+  /* fills width of parent container */
+  /* for dark backgrounds */
+  /* light outline */
+  /* information */
+  /* warning */
+  /* success */
+  /* danger */
+  /* disabled */
+  /* social buttons */ }
+  .btn:active {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px); }
+  .btn:hover {
+    background-color: #333333; }
+  .btn .icon {
+    margin-right: 0.5em; }
+  .btn .icon + .hidden {
+    margin-left: -0.5em; }
+  .btn--block {
+    display: block;
+    width: 100%; }
+    .btn--block + .btn--block {
+      margin-top: 0.25em; }
+  .btn--inverse {
+    color: #000 !important;
+    background-color: #fff; }
+    .btn--inverse:hover {
+      background-color: #cccccc; }
+  .btn--light-outline {
+    border: 1px solid #fff !important;
+    background-color: transparent; }
+  .btn--info {
+    background-color: #4473a8; }
+    .btn--info:hover {
+      background-color: #365c86; }
+  .btn--warning {
+    background-color: #daab1d; }
+    .btn--warning:hover {
+      background-color: #ae8917; }
+  .btn--success {
+    background-color: #33b96b; }
+    .btn--success:hover {
+      background-color: #299456; }
+  .btn--danger {
+    background-color: #c61224; }
+    .btn--danger:hover {
+      background-color: #9e0e1d; }
+  .btn--disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    box-shadow: none;
+    opacity: 0.65; }
+  .btn--facebook {
+    background-color: #3b5998; }
+    .btn--facebook:hover {
+      background-color: #2f477a; }
+  .btn--twitter {
+    background-color: #55acee; }
+    .btn--twitter:hover {
+      background-color: #448abe; }
+
+/* ==========================================================================
+   MASTHEAD
+   ========================================================================== */
+.masthead {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 53px;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
+  z-index: 11;
+  -webkit-animation: fade-in 3s;
+          animation: fade-in 3s;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.125); }
+  .masthead .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .masthead a {
+    color: #4c4c4c; }
+    .masthead a:hover {
+      color: #000; }
+  .masthead .overlay__menu-trigger {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-radius: 4px; }
+    .masthead .overlay__menu-trigger:before {
+      display: none; }
+    .masthead .overlay__menu-trigger:hover {
+      background-color: #e2e2e2; }
+
+@media (max-width: 600px) {
+  .masthead__menu-wrapper {
+    width: 100%; } }
+
+.masthead__menu {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 900px) {
+    .masthead__menu .is--hidden {
+      display: none; } }
+
+.masthead__title {
+  display: none; }
+  @media (min-width: 37.5em) {
+    .masthead__title {
+      display: block;
+      margin: 10px 0;
+      padding: 10px 0 10px 0;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 0.8rem;
+      text-transform: uppercase; } }
+
+.masthead__menu-item {
+  position: relative;
+  display: block;
+  margin: 10px 0 0;
+  padding: 10px 0 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 0.8rem;
+  /* underline effect */
+  /* active state */ }
+  .masthead__menu-item:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 6px;
+    width: 100%;
+    background-color: #4c4c4c;
+    -webkit-transition: all 300ms cubic-bezier(0.325, -0.075, 0, 1.65);
+    transition: all 300ms cubic-bezier(0.325, -0.075, 0, 1.65);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0); }
+  .masthead__menu-item:hover:before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  .masthead__menu-item.is--active {
+    color: #000;
+    cursor: default; }
+    .masthead__menu-item.is--active:before {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      background-color: #000; }
+  @media (min-width: 37.5em) {
+    .masthead__menu-item {
+      margin-left: 30px;
+      margin-right: 0; } }
+
+/*
+   Overlay menu
+   ========================================================================== */
+.overlay__menu {
+  /* by default it's hidden - on top of the viewport */
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 50px 0 0;
+  background-color: #f9f9f9;
+  z-index: 10;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  transition: -webkit-transform 0.4s cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  transition: transform 0.4s cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  transition: transform 0.4s cubic-bezier(0.86, 0.01, 0.77, 0.78), -webkit-transform 0.4s cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  .overlay__menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .overlay__menu a {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 5px 40px 5px 0;
+    color: #4c4c4c; }
+    .overlay__menu a:hover {
+      color: #000; }
+      .overlay__menu a:hover img {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .overlay__menu.is--visible {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+.overlay__menu-item {
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  @media (min-width: 48em) {
+    .overlay__menu-item {
+      width: 50%; } }
+  .overlay__menu-item a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .overlay__menu-item .menu-thumb {
+    display: block;
+    width: 100px;
+    height: 60px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: 1em; }
+    .overlay__menu-item .menu-thumb img {
+      width: 100px;
+      height: 60px;
+      border-radius: 4px; }
+  .overlay__menu-item .menu-text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .overlay__menu-item .menu-title {
+    font-size: 1.563rem;
+    line-height: 1.563rem; }
+  .overlay__menu-item .menu-excerpt {
+    font-size: 0.8rem; }
+
+.overlay__menu-item--secondary {
+  display: block;
+  padding-right: 0.5em;
+  font-size: 1.563rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  @media (min-width: 37.5em) {
+    .overlay__menu-item--secondary {
+      width: 50%; } }
+  @media (min-width: 64em) {
+    .overlay__menu-item--secondary {
+      line-height: 1.953rem; } }
+
+.overlay__menu-label {
+  margin: 30px 0 15px;
+  width: 100%;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  /* lines in headline */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .overlay__menu-label:after {
+    content: '\a0';
+    position: relative;
+    top: 0.4rem;
+    height: 4px;
+    background: #e2e2e2;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .overlay__menu-label:before {
+    margin-right: 10px; }
+  .overlay__menu-label:after {
+    margin-left: 10px; }
+
+.overlay__menu-close {
+  margin-top: 30px;
+  margin-bottom: 0;
+  width: 100%;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  text-transform: uppercase;
+  border-radius: 0; }
+  .overlay__menu-close:active {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+/*
+   Screen
+   ========================================================================== */
+#screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s; }
+  #screen.is--visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    cursor: pointer; }
+
+/* ==========================================================================
+   GLITCH PAGE
+   ========================================================================== */
+body {
+  padding-top: 0 !important; }
+
+.overlay__menu {
+  padding-top: 0; }
+
+.glitch__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+  background-image: url("../images/black-glitched-2.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation-name: glitch-start, glitch-mid, glitch-start, glitch-start, glitch-end;
+          animation-name: glitch-start, glitch-mid, glitch-start, glitch-start, glitch-end;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-delay: 0s, 5s, 20s, 25s, 35s;
+          animation-delay: 0s, 5s, 20s, 25s, 35s;
+  z-index: 1; }
+
+.glitch__content {
+  padding: 2em;
+  color: #fff;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+  -webkit-animation: blur 0.2s infinite, shift 20s steps(60) infinite;
+          animation: blur 0.2s infinite, shift 20s steps(60) infinite; }
+  @media (min-width: 37.5em) {
+    .glitch__content {
+      width: 30em; } }
+  .glitch__content:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused; }
+
+.glitch__title {
+  font-size: 1.953rem;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase; }
+  @media (min-width: 37.5em) {
+    .glitch__title {
+      font-size: 2.441rem; } }
+
+.glitch__excerpt {
+  margin-bottom: 2em;
+  font-size: 1rem;
+  font-weight: normal;
+  /* fake paragraph breaks */ }
+  .glitch__excerpt a {
+    color: #fff;
+    border-bottom: 1px solid #e2e2e2; }
+    .glitch__excerpt a:hover {
+      color: #000;
+      background: #fff; }
+  .glitch__excerpt .br {
+    display: block;
+    margin-bottom: 1em; }
+
+/* menu links */
+.glitch__menu {
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .glitch__menu ul {
+    padding: 0; }
+  .glitch__menu li {
+    list-style: none;
+    display: block; }
+  .glitch__menu a {
+    color: #fff;
+    margin-right: 10px;
+    border-bottom: 0; }
+    .glitch__menu a:before {
+      content: "["; }
+    .glitch__menu a:after {
+      content: "]"; }
+    .glitch__menu a:hover {
+      color: #000;
+      background: #fff; }
+
+/* typed.js */
+.typed-cursor {
+  display: none; }
+
+.js .typed__source {
+  display: none;
+  visibility: hidden; }
+.js .typed__secondary {
+  opacity: 0; }
+
+/* typed text destination container */
+.typed__dest {
+  display: block; }
+  .typed__dest:after {
+    visibility: visible;
+    content: "";
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    width: 0.5em;
+    height: 1em;
+    top: 5px;
+    margin-left: 0;
+    -webkit-animation: ready 1s steps(2, start) infinite;
+            animation: ready 1s steps(2, start) infinite; }
+</style>
+    
+
+    <script>
+      /*
+loadCSS: load a CSS file asynchronously.
+[c]2015 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+
+(function(w){
+  "use strict";
+  /* exported loadCSS */
+  w.loadCSS = function( href, before, media ){
+    // Arguments explained:
+    // `href` [REQUIRED] is the URL for your CSS file.
+    // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+      // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+    // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+    var ss = w.document.createElement( "link" );
+    var ref;
+    if( before ){
+      ref = before;
+    }
+    else if( w.document.querySelectorAll ){
+      var refs = w.document.querySelectorAll(  "style,link[rel=stylesheet],script" );
+      // No need to check length. This script has a parent element, at least
+      ref = refs[ refs.length - 1];
+    }
+    else {
+      ref = w.document.getElementsByTagName( "script" )[ 0 ];
+    }
+
+    var sheets = w.document.styleSheets;
+    ss.rel = "stylesheet";
+    ss.href = href;
+    // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+    ss.media = "only x";
+
+    // Inject link
+      // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+      // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+    ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+    // A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+    ss.onloadcssdefined = function( cb ){
+      var defined;
+      for( var i = 0; i < sheets.length; i++ ){
+        if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+          defined = true;
+        }
+      }
+      if( defined ){
+        cb();
+      } else {
+        setTimeout(function() {
+          ss.onloadcssdefined( cb );
+        });
+      }
+    };
+
+    // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+    ss.onloadcssdefined(function() {
+      ss.media = media || "all";
+    });
+    return ss;
+  };
+}(this));
+
+      loadCSS("/assets/non-critical.css");
+    </script>
+    <noscript><link href="/assets/non-critical.css" rel="stylesheet"></noscript>
+
+    <script>
+      document.createElement("picture");
+    </script>
+    <script type="text/javascript" src="/assets/vendor/picturefill.min.js" async="true"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://localhost:4000/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="http://localhost:4000/manifest.json">
+    <meta name="msapplication-TileColor" content="#40393e">
+    <meta name="msapplication-TileImage" content="http://localhost:4000/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+  </head>
+
+  <body id="0">
+
+    
+
+    
+
+<nav class="overlay__menu">
+  <div class="overlay__menu-wrapper container">
+    <ul class="overlay__menu-col-1">
+      <li class="overlay__menu-label">Of Interest</li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/work/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/work-portfolio-menu-thumb.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">Work Portfolio</div>
+              <div class="menu-excerpt">Things I’ve designed, illustrated, and developed
+</div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/articles/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/blog-articles-menu-thumb.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">Blog Articles</div>
+              <div class="menu-excerpt">Thoughts, inspiration, mistakes, and other minutia I’ve written
+</div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/mastering-paper/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/mastering-paper-menu-img.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">Mastering Paper</div>
+              <div class="menu-excerpt">Tutorials to help you master Paper by FiftyThree
+</div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/work/jekyll-themes/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/jekyll-themes-menu-item.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">Jekyll Themes</div>
+              <div class="menu-excerpt">Open source Jekyll themes
+</div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/procreate-paintings/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/procreate-paintings-menu-thumb.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">Procreate Paintings</div>
+              <div class="menu-excerpt">Portraits digitally painted with Procreate
+</div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/paperfaces/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/paperfaces-menu-thumb.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">PaperFaces Portraits</div>
+              <div class="menu-excerpt">Portraits digitally painted with Paper by FiftyThree
+</div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="overlay__menu-item">
+          <a href="http://localhost:4000/tiny-paintings/">
+            <div class="menu-thumb"><img src="http://localhost:4000/images/tiny-paintings-menu-thumb.jpg" alt=""></div>
+            <div class="menu-text">
+              <div class="menu-title">Tiny Paintings</div>
+              <div class="menu-excerpt">Mini watercolor portraits painted at really small sizes
+</div>
+            </div>
+          </a>
+        </li>
+      
+    </ul>
+    <ul class="overlay__menu-col-2">
+      <li class="overlay__menu-label">Everything Else</li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/about/">About</a></li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/faqs/">FAQs</a></li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/contact/">Contact</a></li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/support/">Support</a></li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/style-guide/">Style Guide</a></li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/terms/">Terms &amp; Policies</a></li>
+      
+        <li class="overlay__menu-item--secondary"><a href="http://localhost:4000/sitemap/">Sitemap</a></li>
+      
+    </ul>
+  </div>
+  <button class="overlay__menu-close btn">[ESC] Close Menu</button>
+</nav>
+
+<div id="screen"></div>
+
+
+<div class="glitch__wrapper">
+
+  <div class="glitch__content">
+
+    <nav class="glitch__menu">
+  <ul>
+    <li><a href="#0" class="overlay__menu-trigger">Skip to Main Menu</a></li>
+  </ul>
+</nav>
+
+<noscript>
+<div class="typed__source">
+  <h1 class="glitch__title">Hello, my name is Michael&nbsp;Rose.</h1>
+  <div class="glitch__excerpt">
+    <p>I am just another boring, tattooed, time traveling designer from Buffalo New York.</p>
+    <p>I enjoy eating chicken wings, <a href="http://localhost:4000/paperfaces/">sketching on an iPad</a>, and playing Xbox.</p>
+    <p>Here you will find a collection of <a href="http://localhost:4000/articles/">my writing</a>, <a href="http://localhost:4000/mastering-paper/">Paper by FiftyThree tutorials</a>, and other <a href="http://localhost:4000/work/">creative endeavors</a>.</p>
+  </div>
+</div>
+</noscript>
+
+<p><span id="js-home-typed" class="typed__dest glitch__excerpt"></span></p>
+
+
+  </div>
+
+</div>
+
+
+    
+      <script type="text/javascript" src="/assets/glitch.js" async="true"></script>
+    
+
+    <!-- Google Universal Analytics -->
+    <script async>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '', 'mademistakes.com');
+      ga('send', 'pageview');
+    </script>
+
+    
+
+    <!-- QR code -->
+    <div id="qr" class="hidden">
+      <img src="https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=http://localhost:4000/&choe=UTF-8" alt="Scan QR code with a smartphone">
+      <p><small>http://localhost:4000/</small></p>
+    </div>
+
+  </body>
+
+</html>
+

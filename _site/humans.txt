@@ -1,0 +1,18 @@
+_  ________ ____   _  ______________  _________
+|\/||__||  \|___   |\/||[__  | |__||_/ |___[__
+|  ||  ||__/|___   |  ||___] | |  || \_|______]
+
+/* MADEMISTAKES.COM */
+
+  Designer:     Michael Rose
+  Twitter:      @mmistakes
+  Location:     Buffalo, New York USA
+
+  Last updated: 2016-08-16 17:05:13 -0400
+  Language:     English
+  Built with:   Jekyll 3.1.6 <http://jekyllrb.com>
+                Sublime Text 3 <http://www.sublimetext.com>
+                Adobe Creative Suite
+                Grunt <http://gruntjs.com>
+                SimpleIcon <http://www.flaticon.com>
+                Noun Project <https://thenounproject.com>
