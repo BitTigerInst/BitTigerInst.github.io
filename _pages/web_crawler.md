@@ -10,7 +10,7 @@ fullwidth: true
 tiles: true
 feature:
   visible: false
-  headline: "Featured Work"
+  headline: 
   category: web_crawler
 ---
 

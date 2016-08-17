@@ -5,8 +5,8 @@ date: 2014-06-01
 modified: 2016-02-11
 excerpt: "MNew York."
 image:
-  feature: about-michael-collage-2016.jpg
-  teaser: about-teaser.jpg
+  feature:
+  teaser:
 ads: false
 share: false
 author: false
