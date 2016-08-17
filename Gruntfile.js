@@ -3,6 +3,50 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    jshint: {
+      options: {
+        jshintrc: '.jshintrc'
+      },
+      all: [
+        'Gruntfile.js',
+        'js/*.js',
+        '!js/main.js'
+      ]
+    },
+    watch: {
+      js: {
+        files: [
+          '<%= jshint.all %>'
+        ],
+        tasks: ['jshint', 'uglify', 'surround'],
+        options: {
+          livereload: true
+        }
+      },
+    },
+    uglify: {
+      dist: {
+        options: {
+          banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */',
+          compress: true,
+          beautify: false,
+          mangle: false
+        },
+        files: {
+          'js/main.js': [
+            'js/plugins/*.js',
+            'js/_*.js'
+          ]
+        }
+      }
+    },
+    surround: {
+      src: 'js/main.js',
+      options: {
+        overwrite: true,
+        prepend: '---\n---',
+      },
+    },
     imagemin: {
       dist: {
         options: {
@@ -35,37 +79,25 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '_svg/',
+          cwd: 'images/',
           src: '{,*/}*.svg',
-          dest: 'svg/'
+          dest: 'images/'
         }]
       }
     },
-    svgstore: {
-      options: {
-        prefix : 'icon-',
-        cleanup: false,
-        svg: {
-          style: 'display: none;'
-        }
-      },
-      default: {
-        files: {
-          '_includes/svg-icons.svg':
-            ['svg/*.svg']
-        }
-      }
-    }
   });
 
   // Load tasks
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-imgcompress');
-  grunt.loadNpmTasks('grunt-svgstore');
   grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-imgcompress');
+  grunt.loadNpmTasks('grunt-surround');
 
   // Register tasks
+  grunt.registerTask('scripts', ['watch', 'uglify']);
   grunt.registerTask('images', ['newer:imgcompress', 'newer:svgmin']);
-  grunt.registerTask('svg', ['svgstore'])
 };
