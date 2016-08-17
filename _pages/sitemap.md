@@ -27,7 +27,7 @@ A hierarchical breakdown of all the sections and pages found on the site. For yo
     <li><a href="{{ site.url }}/tag/">Archives by Tag</a>
       <ul>
         {% assign tags_list = site.tags | sort %}  
-        {% for tag in tags_list %} 
+        {% for tag in tags_list %}
           <li><a href="{{ site.url }}/tag/{{ tag[0] | replace:' ','-' | downcase }}/">{{ tag[0] }}</a></li>
         {% endfor %}
       </ul>
@@ -46,7 +46,7 @@ A hierarchical breakdown of all the sections and pages found on the site. For yo
         {% endfor %}
       </ul>
     </li>
-    <li><a href="{{ site.url }}/work/">Work</a>
+    <li><a href="{{ site.url }}/work/">web_crawler</a>
       <ul>
         {% for post in site.categories.work %}
           {% include post-list.html %}
@@ -55,4 +55,3 @@ A hierarchical breakdown of all the sections and pages found on the site. For yo
     </li>
   </ul><!-- /.col5 -->
 </div><!-- /.sitemap -->
-

@@ -1,7 +1,7 @@
 ---
 layout: glitch
 permalink: /
-title: "A Designer's Faux Pas"
+title: "this is good thing"
 excerpt: "Making stuff one mistake at a time."
 ads: false
 ---
@@ -14,10 +14,10 @@ ads: false
 
 <noscript>
 <div class="typed__source">
-  <h1 class="glitch__title">Hello, my name is Michael&nbsp;Rose.</h1>
+  <h1 class="glitch__title">Hello, this is BitTiger.</h1>
   <div class="glitch__excerpt">
-    <p>I am just another boring, tattooed, time traveling designer from Buffalo New York.</p>
-    <p>I enjoy eating chicken wings, <a href="{{ site.url }}/paperfaces/">sketching on an iPad</a>, and playing Xbox.</p>
+    <p>We have Africa Officer Jerrry.</p>
+    <p>full stack campain <a href="{{ site.url }}/paperfaces/">sketching on an iPad</a>, and playing Xbox.</p>
     <p>Here you will find a collection of <a href="{{ site.url }}/articles/">my writing</a>, <a href="{{ site.url }}/mastering-paper/">Paper by FiftyThree tutorials</a>, and other <a href="{{ site.url }}/work/">creative endeavors</a>.</p>
   </div>
 </div>

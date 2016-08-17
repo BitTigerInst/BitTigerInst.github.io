@@ -1,24 +1,24 @@
 # Site wide configuration
 
-title: "Made Mistakes"
-description: "Personal website of designer slash illustrator Michael Rose."
+title: "BitTiger Project"
+description: "This is the project of bittiger"
 logo: site-logo.png
 teaser: default-teaser.png
 locale: en_US
 words_per_minute: 200
 title_separator: "×"
 repository: "mmistakes/made-mistakes-jekyll"
-url: https://mademistakes.com
+url: https://community.bittiger.io
 
 
 # Site owner
 
 owner:
-  name: "Michael Rose"
-  email: michael@mademistakes.com
-  twitter: mmistakes
-  facebook: michaelrose
-  instagram: mmistakes
+  name: "BitTiger Project"
+  email: x@bittiger.io
+  twitter: bittiger
+  facebook: BitTiger
+  instagram: BitTiger
   tumblr: mademistakes
   github: mmistakes
   github-repo: https://github.com/mmistakes/made-mistakes-jekyll/
@@ -34,7 +34,7 @@ owner:
     verify: Y5DYjZ4VWlrQzBP5kcQJeOKLNas
   yandex:
     verify: 55a5419baf76a498
-  bio: "Just another boring, tattooed, time traveling designer."
+  bio: "Just do it."
   avatar: bio-photo.jpg # 160x160 px image for author byline
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
@@ -158,13 +158,13 @@ defaults:
       category: tiny-paintings
       comments: true
 
-  # Work
+  # web crawler
   - scope:
-      path: _posts/work
+      path: _posts/web_crawler
       type: posts
     values:
       layout: article
-      category: work
+      category: web_crawler
 
   # FAQs
   - scope:

@@ -11,9 +11,3 @@ feature:
   headline: "Featured Articles"
   category: articles
 ---
-
-{% for post in site.categories.articles %}
-  {% if post.featured != true %}
-  {% include archive__item.html %}
-  {% endif %}
-{% endfor %}

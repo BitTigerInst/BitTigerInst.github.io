@@ -15,8 +15,8 @@ procreate-paintings:
 tiny-paintings:
   name: "Tiny Paintings"
 
-work:
-  name: "Work"
+web_crawler:
+  name: "web_crawler"
 
 faqs:
   name: "Frequently Asked Questions"
