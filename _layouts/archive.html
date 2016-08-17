@@ -2,24 +2,45 @@
 layout: default
 ---
 
-<div id="main" role="main">			
-	<div class="wrap">
-		{% if page.image.feature %}
-		<div class="page-feature">
-			<div class="page-image">
-				<img src="{{ site.url }}/images/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}">
-				{% if page.image.credit %}{% include image-credit.html %}{% endif %}
-			</div><!-- /.page-image -->
-		</div><!-- /.page-feature -->
-		{% endif %}
-		<div class="page-title">
-			<h1>{{ page.title }}</h1>
-			{% if page.excerpt %}<h2>{{ page.excerpt }}</h2>{% endif %}
-		</div>
-		<div class="archive-wrap">
-			<div class="page-content">
-				{{ content }}
-			</div><!-- /.page-content -->
-		</div class="archive-wrap"><!-- /.archive-wrap -->
-	</div><!-- /.wrap -->
-</div><!-- /#main -->
+{% include masthead.html %}
+{% include browser-upgrade.html %}
+
+<div id="main" role="main">
+
+  <header class="container post__header">
+    <h1 class="post__title">{{ page.title }}</h1>
+    {% if page.subtitle %}<h2 class="post__excerpt">{{ page.subtitle | markdownify | remove: "<p>" | remove: "</p>" }}</h2>{% endif %}
+    {% include page__hero.html %}
+    {% include breadcrumbs.html %}
+  </header>
+
+  {% if page.feature.visible == true %}
+    {% include featured.html %}
+  {% endif %}
+
+  <div class="container post__content">
+
+    {% unless page.fullwidth == true %}<div class="post__inner-wrapper">{% endunless %}
+
+      <section class="post__body">
+        {{ content }}
+      </section>
+
+    {% unless page.fullwidth == true %}</div>
+
+    <aside class="post__sidebar sticky">
+      <div class="toc--sidebar"></div>
+      {% include ad.html %}
+    </aside>
+
+    {% endunless %}
+
+  </div>
+
+  {% if page.tiles == true %}
+    {% include archive__tiles.html %}
+  {% endif %}
+
+</div>
+
+{% include colophon.html %}

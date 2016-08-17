@@ -1,13 +1,16 @@
-{% if page.categories and page.categories != empty %}
-  <nav class="breadcrumbs">
-    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-      <a href="{{ site.url }}" itemprop="url">
-        <span itemprop="title">Home</span>
-      </a> › 
-    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-      <a href="{{ site.url }}/{{ page.categories | first }}/" itemprop="url">
-        <span itemprop="title">{{ page.categories | first | replace: '-',' ' | capitalize }}</span>
-      </a>
-    </span>
-  </nav><!-- /.breadcrumbs -->
-{% endif %}
+{% assign page_slug = page.url | remove_first: '/' | split: '/' %}
+{% assign slug_first = page_slug[0] %}
+{% assign slug = site.data.slugs[slug_first] %}
+
+<nav class="breadcrumbs">
+  <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="{{ site.url }}" class="breadcrumb__item" itemprop="url">
+      <span itemprop="title">Home</span>
+    </a> <span class="breadcrumb__sep">×</span>
+  </span>
+  <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="{{ site.url }}/{{ slug_first }}/" class="breadcrumb__item" itemprop="url">
+      <span itemprop="title">{{ slug.name }}</span>
+    </a>
+  </span>
+</nav><!-- /.breadcrumbs -->
