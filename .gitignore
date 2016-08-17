@@ -10,4 +10,4 @@ _asset_bundler_cache
 .asset-cache
 .bundle
 .jekyll-metadata
-vendor
+/vendor
