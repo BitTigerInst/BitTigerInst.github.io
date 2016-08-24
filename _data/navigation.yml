@@ -5,3 +5,6 @@ main:
 
   - title: "Contact"
     url: /contact.html
+
+  - title: "Ranking"
+    url: https://bittiger-ranking.firebaseapp.com/
