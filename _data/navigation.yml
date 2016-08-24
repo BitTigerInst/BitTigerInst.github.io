@@ -1,4 +1,7 @@
 # main links links
 main:
-  - title: "Official Website"
-    url: www.bittiger.io
+  - title: "About"
+    url: /about.html
+
+  - title: "Contact"
+    url: /contact.html
