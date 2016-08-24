@@ -20,7 +20,7 @@ feature_row:
     title: "Recommendation System on AppStore Part One"
     excerpt:
     url: "https://www.bittiger.io/classpage/5NxHt3skbSgBj7JXA"
-    btn_label: "High Quality Video"
+    btn_label: "高清小视频"
     btn_class: "btn--inverse"
 
   - image_path: <script>var w=window,d=document,e;w._fpes||(w._fpes=[],w.addEventListener("load",function(){var s=d.createElement("script");s.src="//embed.flowplayer.org/6.0.5/embed.min.js",d.body.appendChild(s)})),e=[].slice.call(d.getElementsByTagName("script"),-1)[0].parentNode,w._fpes.push({e:e,l:"",c:{"ratio":0.5625,"rtmp":0,"live":false,"origin":"https://www.bittiger.io/classpage/cduS9yb4yZPz8bZY9","analytics":"UA-68088696-2","swf":"//releases.flowplayer.org/6.0.5/flowplayer.swf","swfHls":"//releases.flowplayer.org/6.0.5/flowplayerhls.swf","adaptiveRatio":false,"clip":{"sources":[{"type":"application/x-mpegurl","src":"https://cdn-v2.tianmaying.com/272367/142464.m3u8","engine":"hlsjs"},{"type":"video/webm","src":"//cdn-v2.tianmaying.com/272367/142464.webm"},{"type":"video/mp4","src":"//cdn-v2.tianmaying.com/272367/142464.mp4"},{"type":"video/flash","src":"mp4:272367/142464.mp4"}]}}});</script>
@@ -37,6 +37,14 @@ feature_row:
     url: "https://www.bittiger.io/classpage/CBhhSdKgJiN2hpgau"
     btn_label: "High Quality Video"
     btn_class: "btn--inverse"
+
+  - image_path: <script>var w=window,d=document,e;w._fpes||(w._fpes=[],w.addEventListener("load",function(){var s=d.createElement("script");s.src="//embed.flowplayer.org/6.0.5/embed.min.js",d.body.appendChild(s)})),e=[].slice.call(d.getElementsByTagName("script"),-1)[0].parentNode,w._fpes.push({e:e,l:"",c:{"ratio":0.5625,"rtmp":0,"live":false,"origin":"https://www.bittiger.io/videos/JL8Ch3NuYY3oPnfwX/HbcfjrPGxJHvKyzQR","analytics":"UA-68088696-2","swf":"//releases.flowplayer.org/6.0.5/flowplayer.swf","swfHls":"//releases.flowplayer.org/6.0.5/flowplayerhls.swf","adaptiveRatio":false,"clip":{"sources":[{"type":"application/x-mpegurl","src":"https://cdn-v2.tianmaying.com/272367/131173.m3u8","engine":"hlsjs"},{"type":"video/webm","src":"//cdn-v2.tianmaying.com/272367/131173.webm"},{"type":"video/mp4","src":"//cdn-v2.tianmaying.com/272367/131173.mp4"},{"type":"video/flash","src":"mp4:272367/131173.mp4"}]}}});</script>
+    title: "Spark Series Videos"
+    excerpt:
+    url: "https://www.bittiger.io/videos/JL8Ch3NuYY3oPnfwX/HbcfjrPGxJHvKyzQR"
+    btn_label: "High Quality Video"
+    btn_class: "btn--inverse"
+
 
 feature_row2:
   - image_path: movie_rating2.jpg
