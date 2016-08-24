@@ -1,7 +1,4 @@
 # main links links
 main:
-  - title: "Tiger"
-    url: /splash-page/
-
-  - title: "Sample Navigation Link 2"
-    url: /
+  - title: "Official Website"
+    url: www.bittiger.io
