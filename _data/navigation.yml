@@ -1,10 +1,63 @@
 # main links links
 main:
+  - title: "Ranking"
+    url: https://bittiger-project-geeks-ranking.firebaseapp.com/
+
   - title: "About"
     url: /about.html
 
   - title: "Contact"
     url: /contact.html
 
-  - title: "Ranking"
-    url: https://bittiger-ranking.firebaseapp.com/
+  - title: "Terms &amp; Privacy Policy"
+    url: /terms/
+
+
+# documentation links
+docs:
+  - title: Registration
+    children:
+      - title: "Choose a project"
+        url: /docs/choose-project/
+      - title: "Build your unique project"
+        url: /docs/build-project/
+      - title: "Register latest project"
+        url: /docs/register/
+      - title: "Find your team member"
+        url: /docs/find-team-member/
+
+  - title: Kick off project
+    children:
+      - title: "Start from zero"
+        url: /docs/start-from-zero/
+      - title: "Start from existing project"
+        url: /docs/start-from-one/
+
+  - title: Tutorial
+    children:
+      - title: "Working with GitHub"
+        url: /docs/github/
+      - title: "Working with Proposal"
+        url: /docs/proposal/
+      - title: "Working with your team"
+        url: /docs/team/
+
+  - title: Demo your project
+    children:
+      - title: "Readable README"
+        url: /docs/readme/
+      - title: "Demo"
+        url: /docs/demo/
+      - title: "Presentation"
+        url: /docs/presentation/
+
+  - title: Others
+    children:
+      - title: "faq"
+        url: /docs/history/
+      - title: "Contributing"
+        url: /docs/contributing/
+      - title: "License"
+        url: /docs/license/
+      - title: "Terms &amp; Privacy Policy"
+        url: /terms/
