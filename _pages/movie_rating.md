@@ -5,7 +5,7 @@ permalink: /movie_rating
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: movie_rating1.jpg
+  overlay_image: movie_rating3.jpg
   cta_label: Guidebook
   cta_url: "https://nychent.gitbooks.io/movie-rating-with-collaborative-filtering/content/"
   caption: "Photo credit: [**addictivetips**](http://cloud.addictivetips.com/wp-content/uploads/2015/11/IMDb-rating-demo.jpg)"
