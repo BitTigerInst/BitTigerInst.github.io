@@ -7,5 +7,9 @@ redirect_from:
   - /theme-setup/
 ---
 
+
 {% include base_path %}
+1. read the description or watch the project video
+2. choose the one you like.
+
 construction
