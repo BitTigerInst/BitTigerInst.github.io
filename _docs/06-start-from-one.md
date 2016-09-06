@@ -6,4 +6,6 @@ modified: 2016-04-13T15:54:02-04:00
 ---
 
 {% include base_path %}
-construction
+1. Fork from existing repository,
+2. Learn from the code,  
+3. Adding more features on this project

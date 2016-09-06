@@ -9,7 +9,11 @@ redirect_from:
 
 
 {% include base_path %}
-1. read the description or watch the project video
+1. read the description or watch the project video from :
+url : https://bittiger.io
+
 2. choose the one you like.
+
+
 
 construction

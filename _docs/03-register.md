@@ -7,4 +7,5 @@ modified: 2016-08-01T09:36:36-04:00
 
 {% include base_path %}
 
-construcntion
+1. Follow our wechat public profile and our bbs(http://community.bittiger.io), we will have an announcement for registration.
+2 Fill the registration form when it is out.   

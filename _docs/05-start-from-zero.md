@@ -6,4 +6,4 @@ modified: 2016-08-21T17:19:29-04:00
 ---
 
 {% include base_path %}
-construction
+1. Read all the docs, and watch relevant video, and start from scratch.   
